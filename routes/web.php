@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::resource('blogs','blogController');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/product', 'ProductController@index')->name('product');
+Route::get('/user_access', 'UserAccessController@index')->name('user_access');

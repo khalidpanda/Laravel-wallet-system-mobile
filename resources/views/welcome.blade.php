@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    vishnu
+                    khalid
                 </div>
 
                 <div class="links">

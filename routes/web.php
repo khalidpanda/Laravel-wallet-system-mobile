@@ -16,9 +16,19 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('blogs','blogController');
+Route::resource('products','ProductController');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/product', 'ProductController@index')->name('product');
+
+Route::get('/products.index', 'ProductController@index')->name('products.index');
+Route::post('/products.store', 'ProductController@store')->name('products.store');
+Route::get('/products.create', 'ProductController@create')->name('products.create');
+Route::get('/products.show/{product}', 'ProductController@show')->name('products.show');
+Route::put('/products/{product}', 'ProductController@update')->name('products.update');
+Route::delete('/products.destroy/{product}', 'ProductController@destroy')->name('products.destroy');
+Route::get('/products.edit/{product}', 'ProductController@edit')->name('products.edit');
+
+
+
 Route::get('/user_access', 'UserAccessController@index')->name('user_access');

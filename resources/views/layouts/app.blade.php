@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Dashboard 2</title>
+  <title>POS System</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
@@ -105,7 +105,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-                <a href="{{ route('home') }}" class="nav-link active">
+                <a href="{{ url('home') }}" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Home</p>
                 </a>
@@ -113,27 +113,27 @@
 
 
               <li class="nav-item">
-                <a href="{{ route('product') }}" class="nav-link ">
+                <a href="{{ url('products') }}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Product Management</p>
                 </a>
               </li>
 
                <li class="nav-item">
-                <a href="{{ route('home') }}" class="nav-link ">
+                <a href="{{ url('home') }}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>User Access Control</p>
                 </a>
               </li>
           <li class="nav-item">
-            <a href="{{ route('logout') }}" class="nav-link"  
+            <a href="{{ url('logout') }}" class="nav-link"  
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
               <i class="nav-icon fas fa-th"></i>
               <p>
                {{ __('Logout') }}
               </p>
             </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
           </li>
@@ -152,7 +152,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard v2</h1>
+            <h1 class="m-0 text-dark">@yield('title')</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">

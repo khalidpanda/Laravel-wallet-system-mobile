@@ -2,13 +2,18 @@
 @section('content')
 @section('title', 'Product Management')
 
+<style type="text/css">
+    #table_length{
+        display: none;
+    }
+</style>
 <div class="card ">
   <div class="card-body">
  <div class="row">
         <div class="col-lg-12 margin-tb">
            
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ url('products.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ url('products/create') }}"> Create New Product</a>
             </div>
         </div>
     </div>
@@ -20,7 +25,7 @@
         </div>
     @endif
    <br>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table">
         <thead>
         <tr>
             <th>No</th>
@@ -40,11 +45,11 @@
             <td>{{ $product->product_price }}</td>
             <td>{{ $product->product_quantity }}</td>
             <td>
-                <form action="{{ url('products.destroy',$product->product_id) }}" method="POST">
+                <form action="{{ url('products/destroy',$product->product_id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ url('products.show',$product->product_id) }}">View</a>
+                    <a class="btn btn-info" href="{{ url('products/show',$product->product_id) }}">View</a>
     
-                    <a class="btn btn-primary" href="{{ url('products.edit',$product->product_id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ url('products/edit',$product->product_id) }}">Edit</a>
    
                     @csrf
                     @method('DELETE')
@@ -61,3 +66,4 @@
 </div>
 </div>
 @endsection
+

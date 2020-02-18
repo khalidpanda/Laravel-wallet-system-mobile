@@ -65,9 +65,11 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
-    {
-        return view('products.show',compact('product'));
+    public function show( $products)
+    {   
+        // var_dump($products);die;
+         $products = Product::where('product_id', $products)->first();
+        return view('products.show',compact('products'));
     }
    
     /**
@@ -90,19 +92,19 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-   public function update(Request $request, $id)
-{
-      $request->validate([
-        'product_name'=>'required',
-        'product_sku'=> 'required|integer',
-        'product_price' => 'required|integer'
-      ]);
+   public function update(Request $request)
+{     
+      $product_id = $request->input('product_id');
+      $product_name = $request->input('product_name');
+      $product_sku = $request->input('product_sku');
+      $product_price = $request->input('product_price');
+      
 
-      $product = Product::find($id);
-      $product->product_name = $request->get('product_name');
-      $product->product_sku = $request->get('product_sku');
-      $product->product_price = $request->get('product_price');
-      $product->save();
+       Product::where('product_id', $product_id)->update([
+        'product_name' => $product_name,
+            'product_sku' => $product_sku,
+            'product_sku' => $product_sku,
+       ]);
 
       return redirect('/products')->with('success', 'Product has been updated');
 }

@@ -23,17 +23,19 @@
         <thead>
         <tr>
             <th>No</th>
+            <!-- <th>No</th> -->
             <th>Product Name</th>
             <th>Product SKU</th>
             <th>Product Price</th>
             <th>Product Quantity</th>
-            <th width="280px">Action</th>
+            <th >Action</th>
         </tr>
     </thead>
     <tbody>
-        @foreach ($products as $product)
+       
+        @foreach ($products as $key => $product)
         <tr>
-            <td>{{ ++$i }}</td>
+            <td>{{ $key+1 }}</td>
             <td>{{ $product->product_name }}</td>
             <td>{{ $product->product_sku }}</td>
             <td>{{ $product->product_price }}</td>
@@ -56,7 +58,7 @@
     </tbody>
     </table>
   
-    {!! $products->links() !!}
+    
 </div>
 </div>
 @endsection

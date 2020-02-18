@@ -28,6 +28,7 @@
         @csrf
        
           <input type="hidden" class="form-control" name="product_id" value="{{ $products->product_id }}" >
+          <input type="hidden" class="form-control" name="product_user" value="{{ Auth::user()->id }}" >
         
         <div class="form-group">
           <label for="name">Product Name:</label>

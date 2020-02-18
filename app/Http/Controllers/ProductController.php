@@ -1,7 +1,8 @@
 <?php
   
 namespace App\Http\Controllers;
-  
+
+use Auth;  
 use App\Models\Product;
 use Illuminate\Http\Request;
   
@@ -14,10 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->paginate(5);
+        $products = Product::where('product_user', Auth::user()->id)->get();
   
-        return view('products.index',compact('products'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('products.index',compact('products'));
     }
    
     /**
@@ -53,6 +53,7 @@ class ProductController extends Controller
         'product_quantity'=> $request->get('product_price'),
         'product_colour' => $request->get('product_colour'),
         'product_description'=> $request->get('product_description'),
+        'product_user'=> $request->get('product_user'),
 
       ]);
       $Product->save();
@@ -100,12 +101,14 @@ class ProductController extends Controller
       $product_name = $request->input('product_name');
       $product_sku = $request->input('product_sku');
       $product_price = $request->input('product_price');
+      $product_user = $request->input('product_user');
       
 
        Product::where('product_id', $product_id)->update([
         'product_name' => $product_name,
             'product_sku' => $product_sku,
-            'product_sku' => $product_sku,
+            'product_price' => $product_price,
+            'product_user' => $product_user,
        ]);
 
 

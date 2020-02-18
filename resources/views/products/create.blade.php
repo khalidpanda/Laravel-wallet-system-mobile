@@ -21,6 +21,7 @@
       <form method="post" action="{{action('ProductController@store')}}">
           <div class="form-group">
               @csrf
+              <input type="hidden" class="form-control" name="product_user" value="{{ Auth::user()->id }}" >
               <label for="name">Product Name:</label>
               <input type="text" class="form-control" name="product_name"/>
           </div>

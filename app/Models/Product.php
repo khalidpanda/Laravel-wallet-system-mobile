@@ -45,6 +45,7 @@ class Product extends Model
 		'product_special_price',
 		'product_colour',
 		'product_description',
-		'product_discount'
+		'product_discount',
+		'product_user'
 	];
 }

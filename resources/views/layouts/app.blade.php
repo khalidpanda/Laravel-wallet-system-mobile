@@ -18,6 +18,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -85,9 +86,9 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="{{URL::asset('/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
+           style="opacity: .8">&nbsp;&nbsp;  
+      <span class="brand-text font-weight-light">Fube Pos</span>
     </a>
 
     <!-- Sidebar -->
@@ -109,7 +110,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
                 <a href="{{ url('home') }}" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;  
                   <p>Home</p>
                 </a>
               </li>
@@ -117,28 +118,28 @@
 
               <li class="nav-item">
                 <a href="{{ url('products') }}" class="nav-link ">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                   <p>Product Management</p>
                 </a>
               </li>
 
                <li class="nav-item">
                 <a href="{{ url('user_access') }}" class="nav-link ">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-fighter-jet"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                   <p>User Access Control</p>
                 </a>
               </li>
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                   <p>Profile</p>
                 </a>
               </li>
           <li class="nav-item">
             <a href="{{ url('logout') }}" class="nav-link"  
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <p>
                {{ __('Logout') }}
               </p>

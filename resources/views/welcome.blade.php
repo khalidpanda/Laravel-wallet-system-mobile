@@ -13,7 +13,14 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-image: url("dist/img/baku.png");
+                background-repeat: no-repeat;
+                height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+
+background-size: cover;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -46,11 +53,15 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 120px;
+                color: white;
+               
             }
 
+
+
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -78,17 +89,18 @@
             @endif
 
             <div class="content">
+            <h1 class="title m-b-md">welcome To</h1>
                 <div class="title m-b-md">
-                    khalid
+                    Fube Pos System
                 </div>
 
-                <div class="links">
+           <!--     <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                </div>  -->
             </div>
         </div>
     </body>

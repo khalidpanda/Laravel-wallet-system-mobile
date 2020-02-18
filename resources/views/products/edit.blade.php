@@ -23,12 +23,19 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{action('ProductController@update')}}">
+      <form method="post" action="{{action('ProductController@update')}}" enctype="multipart/form-data">
         @method('PATCH')
         @csrf
        
           <input type="hidden" class="form-control" name="product_id" value="{{ $products->product_id }}" >
           <input type="hidden" class="form-control" name="product_user" value="{{ Auth::user()->id }}" >
+
+          <div class="form-group">
+              <label for="price">Product Picture :</label>
+             <br>
+              <img style="width: 15%;" src="{{URL::asset('/uploads/'.'/'.$products->product_picture)}}">
+               <input type="file" class="form-control" name="product_picture" value="{{$products->product_picture}}">
+          </div>
         
         <div class="form-group">
           <label for="name">Product Name:</label>

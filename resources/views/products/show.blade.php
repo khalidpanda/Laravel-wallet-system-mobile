@@ -31,6 +31,11 @@
           <input type="text" class="form-control" name="product_id" value="{{ $products->product_id }}" readonly>
         </div>
         <div class="form-group">
+          <label for="name">Product Picture:</label>
+          <br>
+         <img style="width: 15%;" src="{{URL::asset('/uploads/'.'/'.$products->product_picture)}}">
+        </div>
+        <div class="form-group">
           <label for="name">Product Name:</label>
           <input type="text" class="form-control" name="product_name" value="{{ $products->product_name }}" readonly>
         </div>

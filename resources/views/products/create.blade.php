@@ -19,8 +19,13 @@
       </div><br />
     @endif
       <form method="post" action="{{action('ProductController@store')}}">
+         @csrf
+        <div class="form-group">
+              <label for="price">Product Picture :</label>
+              <input type="file" class="form-control" name="product_picture"/>
+          </div>
           <div class="form-group">
-              @csrf
+             
               <input type="hidden" class="form-control" name="product_user" value="{{ Auth::user()->id }}" >
               <label for="name">Product Name:</label>
               <input type="text" class="form-control" name="product_name"/>

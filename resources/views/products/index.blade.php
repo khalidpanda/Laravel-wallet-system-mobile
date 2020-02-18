@@ -23,7 +23,7 @@
         <thead>
         <tr>
             <th>No</th>
-            <!-- <th>No</th> -->
+            <th>Product Picture</th>
             <th>Product Name</th>
             <th>Product SKU</th>
             <th>Product Price</th>
@@ -36,6 +36,7 @@
         @foreach ($products as $key => $product)
         <tr>
             <td>{{ $key+1 }}</td>
+            <td> <img style="width: 75%;" src="{{URL::asset('/uploads/'.'/'.$product->product_picture)}}"></td>
             <td>{{ $product->product_name }}</td>
             <td>{{ $product->product_sku }}</td>
             <td>{{ $product->product_price }}</td>

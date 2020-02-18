@@ -44,7 +44,8 @@ class ProductController extends Controller
         'product_price' => 'required|integer',
         'product_quantity' => 'required|integer',
         'product_colour'=>'required',
-        'product_description'=> 'required'
+        'product_description'=> 'required',
+        'product_picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
       ]);
       $Product = new Product([
         'product_name' => $request->get('product_name'),
@@ -54,8 +55,16 @@ class ProductController extends Controller
         'product_colour' => $request->get('product_colour'),
         'product_description'=> $request->get('product_description'),
         'product_user'=> $request->get('product_user'),
+        'product_picture'=> $request->file('product_picture')->getClientOriginalName(),
 
       ]);
+
+      if ($request->hasFile('product_picture')) {
+        $image = $request->file('product_picture');
+        $name = $image->getClientOriginalName();
+        $destinationPath = public_path('/uploads');
+        $image->move($destinationPath, $name);
+        }
       $Product->save();
 
       toastr()->success('Product has been added successfully!');
@@ -102,6 +111,11 @@ class ProductController extends Controller
       $product_sku = $request->input('product_sku');
       $product_price = $request->input('product_price');
       $product_user = $request->input('product_user');
+
+      // var_dump($request->hasFile('product_picture'));die;
+       if ($request->hasFile('product_picture')) {
+      $product_picture = $request->file('product_picture')->getClientOriginalName();
+      }
       
 
        Product::where('product_id', $product_id)->update([
@@ -110,6 +124,17 @@ class ProductController extends Controller
             'product_price' => $product_price,
             'product_user' => $product_user,
        ]);
+
+       if ($request->hasFile('product_picture')) {
+            $image = $request->file('product_picture');
+            $name = $image->getClientOriginalName();
+            $destinationPath = public_path('/uploads');
+          $image->move($destinationPath, $name);
+          Product::where('product_id', $product_id)->update([
+               'product_picture' => $product_picture,
+              ]);
+        
+        }
 
 
       toastr()->success('Product has been updated successfully!');

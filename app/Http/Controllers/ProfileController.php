@@ -1,0 +1,158 @@
+<?php
+  
+namespace App\Http\Controllers;
+
+use Auth;  
+use App\Models\User;
+use Illuminate\Http\Request;
+  
+class ProfileController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $User = User::where('id', Auth::user()->id)->first();
+  
+        return view('profile.index',compact('User'));
+    }
+   
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('products.create');
+    }
+  
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+      $request->validate([
+        'product_name'=>'required',
+        'product_sku'=> 'required',
+        'product_price' => 'required|integer',
+        'product_quantity' => 'required|integer',
+        'product_colour'=>'required',
+        'product_description'=> 'required',
+        'product_picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+      ]);
+      $Product = new Product([
+        'product_name' => $request->get('product_name'),
+        'product_sku'=> $request->get('product_sku'),
+        'product_price'=> $request->get('product_price'),
+        'product_quantity'=> $request->get('product_price'),
+        'product_colour' => $request->get('product_colour'),
+        'product_description'=> $request->get('product_description'),
+        'product_user'=> $request->get('product_user'),
+        'product_picture'=> $request->file('product_picture')->getClientOriginalName(),
+
+      ]);
+
+      if ($request->hasFile('product_picture')) {
+        $image = $request->file('product_picture');
+        $name = $image->getClientOriginalName();
+        $destinationPath = public_path('/uploads');
+        $image->move($destinationPath, $name);
+        }
+      $Product->save();
+
+      toastr()->success('Product has been added successfully!');
+      return redirect('/products');
+    }
+   
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+    public function show( $products)
+    {   
+        // var_dump($products);die;
+         $products = Product::where('product_id', $products)->first();
+        return view('products.show',compact('products'));
+    }
+   
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $products = Product::find($id);
+
+        return view('products.edit', compact('products'));
+    }
+  
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+   public function update(Request $request)
+{     
+      $product_id = $request->input('product_id');
+      $product_name = $request->input('product_name');
+      $product_sku = $request->input('product_sku');
+      $product_price = $request->input('product_price');
+      $product_user = $request->input('product_user');
+
+      // var_dump($request->hasFile('product_picture'));die;
+       if ($request->hasFile('product_picture')) {
+      $product_picture = $request->file('product_picture')->getClientOriginalName();
+      }
+      
+
+       Product::where('product_id', $product_id)->update([
+        'product_name' => $product_name,
+            'product_sku' => $product_sku,
+            'product_price' => $product_price,
+            'product_user' => $product_user,
+       ]);
+
+       if ($request->hasFile('product_picture')) {
+            $image = $request->file('product_picture');
+            $name = $image->getClientOriginalName();
+            $destinationPath = public_path('/uploads');
+          $image->move($destinationPath, $name);
+          Product::where('product_id', $product_id)->update([
+               'product_picture' => $product_picture,
+              ]);
+        
+        }
+
+
+      toastr()->success('Product has been updated successfully!');
+      return redirect('/products');
+}
+  
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+   public function destroy($id)
+{
+     $product = Product::find($id);
+     $product->delete();
+
+      toastr()->success('Product has been deleted successfully!');
+      return redirect('/products');
+}
+}

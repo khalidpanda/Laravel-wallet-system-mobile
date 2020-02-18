@@ -98,7 +98,7 @@
           <img src="{{URL::asset('/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{ Auth::user()->name}}</a>
         </div>
       </div>
 
@@ -126,6 +126,13 @@
                 <a href="{{ url('user_access') }}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>User Access Control</p>
+                </a>
+              </li>
+
+               <li class="nav-item">
+                <a href="{{ url('profile') }}" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profile</p>
                 </a>
               </li>
           <li class="nav-item">
@@ -246,7 +253,7 @@
         order: [ 1, 'asc' ]
     } );
 
-   
+
 
 } );
 </script>

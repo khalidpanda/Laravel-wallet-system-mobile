@@ -120,7 +120,7 @@
               </li>
 
                <li class="nav-item">
-                <a href="{{ url('home') }}" class="nav-link ">
+                <a href="{{ url('user_access') }}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>User Access Control</p>
                 </a>

@@ -23,7 +23,7 @@ class UserAccessController extends Controller
      */
       public function index()
     {
-        //
+        return view('user_access.index');
     }
 
     /**

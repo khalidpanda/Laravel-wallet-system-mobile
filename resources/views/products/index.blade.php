@@ -18,12 +18,6 @@
         </div>
     </div>
    
-    @if ($message = Session::get('success'))
-    <br><br>
-        <div class="alert alert-success">
-            <center><p>{{ $message }}</p></center>
-        </div>
-    @endif
    <br>
     <table class="table table-bordered" id="table">
         <thead>

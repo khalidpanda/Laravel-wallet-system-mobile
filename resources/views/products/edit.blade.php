@@ -76,7 +76,7 @@
               <label for="quantity">Product Discount:</label>
               <input type="text" class="form-control" name="product_discount" value="{{ $products->product_discount }}">
           </div>
-        <!-- <button type="submit" class="btn btn-primary">Update</button> -->
+        <button type="submit" class="btn btn-primary">Update</button>
       </form>
   </div>
 </div>

@@ -56,7 +56,9 @@ class ProductController extends Controller
 
       ]);
       $Product->save();
-      return redirect('/products')->with('success', 'Product has been added');
+
+      toastr()->success('Product has been added successfully!');
+      return redirect('/products');
     }
    
     /**
@@ -106,7 +108,9 @@ class ProductController extends Controller
             'product_sku' => $product_sku,
        ]);
 
-      return redirect('/products')->with('success', 'Product has been updated');
+
+      toastr()->success('Product has been updated successfully!');
+      return redirect('/products');
 }
   
     /**
@@ -120,6 +124,7 @@ class ProductController extends Controller
      $product = Product::find($id);
      $product->delete();
 
-     return redirect('/products')->with('success', 'Product has been deleted Successfully');
+      toastr()->success('Product has been deleted successfully!');
+      return redirect('/products');
 }
 }

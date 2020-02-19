@@ -126,7 +126,7 @@
 
                <li class="nav-item">
                 <a href="{{ url('user_access') }}" class="nav-link ">
-                  <i class="fa fa-fighter-jet nav-icon"></i>
+                  <i class="fa fa-key nav-icon"></i>
                   <p>User Access Control</p>
                 </a>
               </li>

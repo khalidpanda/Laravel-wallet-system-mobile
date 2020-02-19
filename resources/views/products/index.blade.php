@@ -7,13 +7,13 @@
         display: none;
     }
 </style>
-<div class="card" style="size: 10vw;">
+<div class="card ">
   <div class="card-body">
  <div class="row">
         <div class="col-lg-12 margin-tb">
            
             <div class="pull-right">
-                <a class="btn btn-dark" href="{{ url('products/create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ url('products/create') }}"> Create New Product</a>
             </div>
         </div>
     </div>
@@ -46,14 +46,14 @@
             <td>
                 <form action="{{ url('products/destroy',$product->product_id) }}" method="POST">
    
-                  <a  href="{{ url('products/show',$product->product_id) }}"><i class="fa fa-eye fa-2x"></i></a>
-                  &nbsp;
-                    <a href="{{ url('products/edit',$product->product_id) }}"><i class="fa fa-edit fa-2x"></i></a>
-                    &nbsp;
+                  <a class="btn btn-info" href="{{ url('products/show',$product->product_id) }}">View</a>
+    
+                    <a class="btn btn-primary" href="{{ url('products/edit',$product->product_id) }}">Edit</a>
+   
                     @csrf
                     @method('DELETE')
       
-                    <a type="submit" class="text-danger"><i class="fa fa-trash-alt fa-2x"></i></a>
+                    <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </td>
         </tr>

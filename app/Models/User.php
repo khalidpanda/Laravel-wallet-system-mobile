@@ -35,6 +35,7 @@ class User extends Model
 		'name',
 		'email',
 		'password',
+		'role',
 		'remember_token'
 	];
 }

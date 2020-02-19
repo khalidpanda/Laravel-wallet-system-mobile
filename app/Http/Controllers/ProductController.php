@@ -77,7 +77,7 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show( $products)
+    public function show($products)
     {   
         // var_dump($products);die;
          $products = Product::where('product_id', $products)->first();

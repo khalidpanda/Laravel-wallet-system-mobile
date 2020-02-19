@@ -110,7 +110,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
                 <a href="{{ url('home') }}" class="nav-link active">
-                  <i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;  
+                  <i class="fa fa-home nav-icon"></i>
                   <p>Home</p>
                 </a>
               </li>
@@ -118,28 +118,28 @@
 
               <li class="nav-item">
                 <a href="{{ url('products') }}" class="nav-link ">
-                  <i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-shopping-bag nav-icon"></i>
                   <p>Product Management</p>
                 </a>
               </li>
 
                <li class="nav-item">
                 <a href="{{ url('user_access') }}" class="nav-link ">
-                  <i class="fa fa-fighter-jet"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-fighter-jet nav-icon"></i>
                   <p>User Access Control</p>
                 </a>
               </li>
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
-                  <i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-user nav-icon"></i>
                   <p>Profile</p>
                 </a>
               </li>
           <li class="nav-item">
             <a href="{{ url('logout') }}" class="nav-link"  
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-power-off nav-icon"></i>
               <p>
                {{ __('Logout') }}
               </p>

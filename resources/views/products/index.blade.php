@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('content')
 @section('title', 'Product Management')
+<?php 
+use App\Models\UserRole;
 
+$UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Product Management')->first();
+?>
 <style type="text/css">
     #table_length{
         display: none;
@@ -9,6 +13,7 @@
 </style>
 <div class="card ">
   <div class="card-body">
+    <?php if($UserRole->edit == 'on'):?>  
  <div class="row">
         <div class="col-lg-12 margin-tb">
            
@@ -17,6 +22,7 @@
             </div>
         </div>
     </div>
+<?php endif;?>
    
    <br>
     <table class="table table-bordered" id="table">
@@ -45,6 +51,7 @@
             <td>{{ $product->product_quantity }}</td>
             <td>
                 <form action="{{ url('products/destroy',$product->product_id) }}" method="POST">
+<<<<<<< HEAD
    
                   <a class="btn btn-info" href="{{ url('products/show',$product->product_id) }}">View</a>
     
@@ -54,6 +61,23 @@
                     @method('DELETE')
       
                     <button type="submit" class="btn btn-danger">Delete</button>
+=======
+                
+                    <?php if($UserRole->view == 'on'):?>
+                    <a class="btn btn-success" href="{{ url('products/show',$product->product_id) }}">View</a>
+                    <?php endif;?>
+
+
+                    <?php if($UserRole->edit == 'on'):?>  
+                    <a class="btn btn-warning" href="{{ url('products/edit',$product->product_id) }}">Edit</a>
+                    
+                   
+                    @csrf
+                    @method('DELETE')
+      
+                    <button class="btn btn-danger" type="submit" class="text-danger">Delete</i></button>
+                    <?php endif;?>
+>>>>>>> 230e7963fcc71f2c84ba59cf2ecd5457e4da05b3
                 </form>
             </td>
         </tr>

@@ -43,11 +43,11 @@
                 <form action="{{ url('user_access/destroy',$Users->id) }}" method="POST">
    
 
-                  <button class="btn btn-success" href="{{ url('user_access/show',$Users->id) }}">View</button>
+                  <a class="btn btn-success" href="{{ url('user_access/show',$Users->id) }}">View</a>
 
-                  <button class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</button>
+                  <a class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</a>
     
-                    <button class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</button>
+                    <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
    
 
                     @csrf

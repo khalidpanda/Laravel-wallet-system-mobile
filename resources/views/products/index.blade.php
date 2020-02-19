@@ -46,9 +46,9 @@
             <td>
                 <form action="{{ url('products/destroy',$product->product_id) }}" method="POST">
    
-                  <button class="btn btn-success" href="{{ url('products/show',$product->product_id) }}">View</button>
+                  <a class="btn btn-success" href="{{ url('products/show',$product->product_id) }}">View</a>
                 
-                    <button class="btn btn-warning" href="{{ url('products/edit',$product->product_id) }}">Edit</button>
+                    <a class="btn btn-warning" href="{{ url('products/edit',$product->product_id) }}">Edit</a>
                    
                     @csrf
                     @method('DELETE')

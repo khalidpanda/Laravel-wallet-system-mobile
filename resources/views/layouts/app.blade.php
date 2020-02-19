@@ -100,7 +100,7 @@
           <img src="{{URL::asset('/dist/img/user4.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">{{ Auth::user()->name}}</a>
+          <a href="{{ url('profile') }}" class="d-block">{{ Auth::user()->name}}</a>
         </div>
       </div>
 
@@ -169,7 +169,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v2</li>
+              <li class="breadcrumb-item active">Pos v 1</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -198,10 +198,10 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2020 <a href="https://www.fube.com.my/">Fube Technology</a>.</strong>
+    <strong>Copyright &copy; 2020 <a href="https://www.fube.com.my/" style="color: #ff8c00;">Fube Technology</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 1.0
+      <b style="color: #ff8c00;">Version 1.0</b> 
     </div>
   </footer>
 </div>

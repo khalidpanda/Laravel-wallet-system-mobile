@@ -42,26 +42,10 @@
             <td>
                 <form action="{{ url('user_access/destroy',$Users->id) }}" method="POST">
    
-<<<<<<< HEAD
                   <a class="btn btn-info" href="{{ url('user_access/show',$Users->id) }}">View</a>
     
                     <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
    
-=======
-<<<<<<< HEAD
-                  <a class="btn btn-info" href="{{ url('user_access/show',$Users->id) }}">View</a>
-
-                  <a class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</a>
-    
-                    <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
-   
-=======
-                  <a href="{{ url('user_access/show',$Users->id) }}"><i class="fa fa-eye fa-2x"></i></a>
-                  &nbsp;&nbsp;
-                    <a  href="{{ url('user_access/edit',$Users->id) }}"><i class="fa fa-edit fa-2x"></i></a>
-                    &nbsp;&nbsp;
->>>>>>> 91933eb81c17304c89dfaaf88d5f16bf79a849bc
->>>>>>> ae57e613bbf71aaf2bf778a9f966eb5eba8b077c
                     @csrf
                     @method('DELETE')
       

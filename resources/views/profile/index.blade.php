@@ -5,7 +5,7 @@
 <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
-                  <img class="profile-user-img img-fluid img-circle" src="{{URL::asset('/dist/img/user2-160x160.jpg')}}" alt="User profile picture">
+                  <img class="profile-user-img img-fluid img-circle" src="{{URL::asset('/dist/img/user4.png')}}" alt="User profile picture">
                 </div>
 
                 <h3 class="profile-username text-center">{{$User->name}}</h3>

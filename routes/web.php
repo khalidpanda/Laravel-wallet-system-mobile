@@ -42,3 +42,5 @@ Route::get('/user_access/show/{id}', 'UserAccessController@show')->name('user_ac
 Route::post('user_access/update','UserAccessController@update');
 Route::delete('/user_access/destroy/{id}', 'UserAccessController@destroy')->name('user_access.destroy');
 Route::get('/user_access/edit/{id}', 'UserAccessController@edit')->name('user_access.edit');
+Route::get('/user_access/right/{id}', 'UserAccessController@right')->name('user_access.right');
+Route::post('user_access/rightfunc','UserAccessController@rightfunc');

@@ -22,8 +22,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $product_colour
  * @property string $product_description
  * @property int $product_discount
+ * @property string $product_picture
  * @property string $created_at
  * @property Carbon $updated_at
+ * @property string $product_user
  *
  * @package App\Models
  */
@@ -46,6 +48,7 @@ class Product extends Model
 		'product_colour',
 		'product_description',
 		'product_discount',
+		'product_picture',
 		'product_user'
 	];
 }

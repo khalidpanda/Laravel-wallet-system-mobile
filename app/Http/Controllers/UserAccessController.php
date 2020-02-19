@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Auth;  
 use App\Models\User;
+use App\Models\UserRole;
 use Illuminate\Http\Request;
 
 class UserAccessController extends Controller
@@ -62,6 +63,18 @@ class UserAccessController extends Controller
       ]);
 
        $User->save();
+
+       $UserRole = new UserRole([
+        'modules' =>'Product Management',
+        'user_id'=> $User->id,
+      ]);
+       $UserRole->save();
+
+       $UserRole1 = new UserRole([
+        'modules' =>'UAC',
+        'user_id'=> $User->id,
+      ]);
+       $UserRole1->save();
 
       toastr()->success('User has been added successfully!');
       return redirect('/user_access');
@@ -130,6 +143,40 @@ class UserAccessController extends Controller
      $User->delete();
 
       toastr()->success('User has been deleted successfully!');
+      return redirect('/user_access');
+    }
+
+     public function right($id)
+    {
+        $User = User::find($id);
+        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management') ->first();
+        $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC') ->first();
+
+        return view('user_access.right', compact('User', 'UserRole', 'UserRole1'));
+    }
+
+    public function rightfunc(Request $request)
+    {   
+        $id = $request->get('userID');
+        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management')->first();
+        $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC')->first();
+
+
+        if ($UserRole) {
+           UserRole::where('user_id', $id)->where('modules', 'Product Management')->update([
+        'edit'=> $request->get('productEdit'),
+        'view'=>  $request->get('productView'),
+       ]);
+        }
+
+        if ($UserRole1) {
+           UserRole::where('user_id', $id)->where('modules', 'UAC')->update([
+        'edit'=> $request->get('userEdit'),
+        'view'=>  $request->get('userView'),
+       ]);
+        }
+       
+       toastr()->success('User Right has been updated successfully!');
       return redirect('/user_access');
     }
 }

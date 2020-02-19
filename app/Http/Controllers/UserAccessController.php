@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;  
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserAccessController extends Controller
@@ -23,7 +24,9 @@ class UserAccessController extends Controller
      */
       public function index()
     {
-        return view('user_access.index');
+       $User = User::all();
+  
+        return view('user_access.index',compact('User'));
     }
 
     /**
@@ -33,7 +36,7 @@ class UserAccessController extends Controller
      */
     public function create()
     {
-        //
+        return view('user_access.create');
     }
 
     /**
@@ -44,7 +47,24 @@ class UserAccessController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+        'name'=>'required',
+        'email'=> 'required',
+        'password' => 'required',
+        'role' => 'required',
+      ]);
+
+      $User = new User([
+        'name' => $request->get('name'),
+        'email'=> $request->get('email'),
+        'password'=>  bcrypt($request->get('password')),
+        'role'=> $request->get('role'),
+      ]);
+
+       $User->save();
+
+      toastr()->success('User has been added successfully!');
+      return redirect('/user_access');
     }
 
     /**
@@ -55,7 +75,8 @@ class UserAccessController extends Controller
      */
     public function show($id)
     {
-        //
+         $User = User::where('id', $id)->first();
+        return view('user_access.show',compact('User'));
     }
 
     /**
@@ -66,7 +87,9 @@ class UserAccessController extends Controller
      */
     public function edit($id)
     {
-        //
+        $User = User::find($id);
+
+        return view('user_access.edit', compact('User'));
     }
 
     /**
@@ -76,9 +99,23 @@ class UserAccessController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $user_id = $request->input('user_id');
+      $name = $request->input('name');
+      $email = $request->input('email');
+      $password = $request->input('password');
+       $role = $request->input('role');
+
+       User::where('id', $user_id)->update([
+        'name' => $name,
+            'email' => $email,
+            'password' => bcrypt($password),
+            'role' => $role,
+       ]);
+
+       toastr()->success('User has been updated successfully!');
+      return redirect('/user_access');
     }
 
     /**
@@ -89,6 +126,10 @@ class UserAccessController extends Controller
      */
     public function destroy($id)
     {
-        //
+     $User = User::find($id);
+     $User->delete();
+
+      toastr()->success('User has been deleted successfully!');
+      return redirect('/user_access');
     }
 }

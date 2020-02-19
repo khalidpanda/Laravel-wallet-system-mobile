@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::resource('products','ProductController');
 Route::resource('profile','ProfileController');
+Route::resource('user_access','UserAccessController');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -34,7 +35,10 @@ Route::get('/products/edit/{product}', 'ProductController@edit')->name('products
 Route::post('profile/update','ProfileController@update');
 Route::get('/profile/edit/{profile}', 'ProfileController@edit')->name('profile.edit');
 
-
-
-
-Route::get('/user_access', 'UserAccessController@index')->name('user_access');
+//user access
+Route::post('/user_access/store', 'UserAccessController@store')->name('user_access.store');
+Route::get('/user_access/create', 'UserAccessController@create')->name('user_access.create');
+Route::get('/user_access/show/{id}', 'UserAccessController@show')->name('user_access.show');
+Route::post('user_access/update','UserAccessController@update');
+Route::delete('/user_access/destroy/{id}', 'UserAccessController@destroy')->name('user_access.destroy');
+Route::get('/user_access/edit/{id}', 'UserAccessController@edit')->name('user_access.edit');

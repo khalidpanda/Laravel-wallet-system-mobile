@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fube Pos</title>
+        <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,22 +18,7 @@
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <style>
-       html, body {
-       background-image: url("dist/img/baku.png");
-       background-repeat: no-repeat;
-       height: 100%;
-       background-position: center;
-       background-size: cover;
-       color: #636b6f;
-       font-family: 'Raleway', sans-serif;
-       font-weight: 100;
-       height: 100vh;
-       margin: 0;
-            }
-
-
-</style>
+  
 </head>
 
 <body>

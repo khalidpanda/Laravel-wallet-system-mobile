@@ -1,11 +1,15 @@
 @extends('layouts.loginLayout')
 
+
+
 @section('content')
+
+<img src="{{asset('dist/img/fube.png')}}" style="margin-left: 30px; margin-top: 14px;" height="42" width="62">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card" style="margin-top: 120px;">
-                <div class="card-header">{{ __('Hello There ! Please login to continue') }}</div>
+            <div class="card" style="margin-top: 120px; background-color: #e2e2e2;">
+                <div class="card-header text-white text-center text-bold" style="background-color: black;">{{ __('Hello There ! Please login to continue') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
@@ -53,7 +57,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-dark">
                                     {{ __('Login') }}
                                 </button>
 

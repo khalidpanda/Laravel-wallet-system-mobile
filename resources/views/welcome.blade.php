@@ -5,22 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
+        <title>Fube Pos</title>
+        <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <style>
+     <style>
             html, body {
-                background-image: url("dist/img/baku.png");
-                background-repeat: no-repeat;
+        
                 height: 100%;
 
-/* Center and scale the image nicely */
-background-position: center;
 
-background-size: cover;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -54,14 +50,15 @@ background-size: cover;
 
             .title {
                 font-size: 120px;
-                color: white;
+                color: black;
                
             }
 
 
 
             .links > a {
-                color: white;
+                color: black;
+                font: bold;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -77,6 +74,7 @@ background-size: cover;
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+        
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -89,7 +87,7 @@ background-size: cover;
             @endif
 
             <div class="content">
-            <h1 class="title m-b-md">welcome To</h1>
+            <h1 class="title m-b-md">Welcome To</h1>
                 <div class="title m-b-md">
                     Fube Pos System
                 </div>

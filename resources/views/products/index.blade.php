@@ -46,14 +46,14 @@
             <td>
                 <form action="{{ url('products/destroy',$product->product_id) }}" method="POST">
    
-                  <a  href="{{ url('products/show',$product->product_id) }}"><i class="fa fa-eye fa-2x"></i></a>
-                  &nbsp;
-                    <a href="{{ url('products/edit',$product->product_id) }}"><i class="fa fa-edit fa-2x"></i></a>
-                    &nbsp;
+                  <button class="btn btn-success" href="{{ url('products/show',$product->product_id) }}">View</button>
+                
+                    <button class="btn btn-warning" href="{{ url('products/edit',$product->product_id) }}">Edit</button>
+                   
                     @csrf
                     @method('DELETE')
       
-                    <a type="submit" class="text-danger"><i class="fa fa-trash-alt fa-2x"></i></a>
+                    <button class="btn btn-danger" type="submit" class="text-danger">Delete</i></button>
                 </form>
             </td>
         </tr>

@@ -89,7 +89,7 @@
     <a href="index3.html" class="brand-link">
       <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;  
-      <span class="brand-text font-weight-light">Fube Pos</span>
+      <span class="brand-text font-weight-light">Pos System</span>
     </a>
 
     <!-- Sidebar -->
@@ -97,7 +97,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{URL::asset('/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{URL::asset('/dist/img/user4.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->name}}</a>
@@ -110,7 +110,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-                <a href="{{ url('home') }}" class="nav-link active">
+                <a href="{{ url('home') }}" class="nav-link active" style="background-color: #ff8c00;">
                   <i class="fa fa-home nav-icon"></i>
                   <p>Home</p>
                 </a>
@@ -198,10 +198,10 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    <strong>Copyright &copy; 2020 <a href="https://www.fube.com.my/">Fube Technology</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.0.3-pre
+      <b>Version</b> 1.0
     </div>
   </footer>
 </div>

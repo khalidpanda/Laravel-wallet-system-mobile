@@ -13,7 +13,7 @@
         <div class="col-lg-12 margin-tb">
            
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ url('user_access/create') }}"> Create New User</a>
+                <a class="btn btn-dark" href="{{ url('user_access/create') }}"> Create New User</a>
             </div>
         </div>
     </div>
@@ -42,16 +42,23 @@
             <td>
                 <form action="{{ url('user_access/destroy',$Users->id) }}" method="POST">
    
+<<<<<<< HEAD
                   <a class="btn btn-info" href="{{ url('user_access/show',$Users->id) }}">View</a>
 
                   <a class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</a>
     
                     <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
    
+=======
+                  <a href="{{ url('user_access/show',$Users->id) }}"><i class="fa fa-eye fa-2x"></i></a>
+                  &nbsp;&nbsp;
+                    <a  href="{{ url('user_access/edit',$Users->id) }}"><i class="fa fa-edit fa-2x"></i></a>
+                    &nbsp;&nbsp;
+>>>>>>> 91933eb81c17304c89dfaaf88d5f16bf79a849bc
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <a type="submit" class="text-danger"><i class="fa fa-trash-alt fa-2x"></i></button>
                 </form>
             </td>
         </tr>

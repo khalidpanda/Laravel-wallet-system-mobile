@@ -43,6 +43,8 @@
                 <form action="{{ url('user_access/destroy',$Users->id) }}" method="POST">
    
                   <a class="btn btn-info" href="{{ url('user_access/show',$Users->id) }}">View</a>
+
+                  <a class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</a>
     
                     <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
    

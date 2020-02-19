@@ -2,12 +2,6 @@
 @section('content')
 @section('title', 'User Access Control')
 
-<?php 
-use App\Models\UserRole;
-
-$UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first(); 
-?>
-
 <style type="text/css">
     #table_length{
         display: none;
@@ -15,7 +9,6 @@ $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC
 </style>
 <div class="card ">
   <div class="card-body">
-     <?php if($UserRole1->edit == 'on'):?>  
  <div class="row">
         <div class="col-lg-12 margin-tb">
            
@@ -24,7 +17,6 @@ $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC
             </div>
         </div>
     </div>
-    <?php endif;?>
    
    <br>
     <table class="table table-bordered" id="table">
@@ -50,28 +42,14 @@ $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC
             <td>
                 <form action="{{ url('user_access/destroy',$Users->id) }}" method="POST">
    
-<<<<<<< HEAD
                   <a class="btn btn-info" href="{{ url('user_access/show',$Users->id) }}">View</a>
-=======
-                    <?php if($UserRole1->view == 'on'):?> 
-                  <a class="btn btn-success" href="{{ url('user_access/show',$Users->id) }}">View</a>
-                   <?php endif;?>
-
-                  <?php if($UserRole1->edit == 'on'):?> 
-                  <a class="btn btn-warning" href="{{ url('user_access/right',$Users->id) }}">User Right</a>
->>>>>>> 230e7963fcc71f2c84ba59cf2ecd5457e4da05b3
     
                     <a class="btn btn-primary" href="{{ url('user_access/edit',$Users->id) }}">Edit</a>
    
                     @csrf
                     @method('DELETE')
       
-<<<<<<< HEAD
                     <button type="submit" class="btn btn-danger">Delete</button>
-=======
-                    <button class="btn btn-danger" type="submit" class="text-danger">Delete</i></button>
-                     <?php endif;?>
->>>>>>> 230e7963fcc71f2c84ba59cf2ecd5457e4da05b3
                 </form>
             </td>
         </tr>

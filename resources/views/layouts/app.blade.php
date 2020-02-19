@@ -115,21 +115,33 @@
                   <p>Home</p>
                 </a>
               </li>
-
-
-              <li class="nav-item">
+              <?php use App\Models\UserRole;?>
+              <?php 
+              $UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Product Management')->first();
+              $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first(); 
+              ?>
+              <?php if (!empty($UserRole)):?>
+                <?php if($UserRole->edit == 'on' || $UserRole->view == 'on'):?>
+                  <li class="nav-item">
                 <a href="{{ url('products') }}" class="nav-link ">
                   <i class="fa fa-shopping-bag nav-icon"></i>
                   <p>Product Management</p>
                 </a>
               </li>
+                <?php endif;?>
+                <?php endif;?>
+              
 
+                <?php if (!empty($UserRole1)):?>
+                <?php if($UserRole1->edit == 'on' || $UserRole1->view == 'on'):?>
                <li class="nav-item">
                 <a href="{{ url('user_access') }}" class="nav-link ">
                   <i class="fa fa-fighter-jet nav-icon"></i>
                   <p>User Access Control</p>
                 </a>
               </li>
+               <?php endif;?>
+                <?php endif;?>
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">

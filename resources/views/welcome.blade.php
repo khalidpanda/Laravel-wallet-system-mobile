@@ -49,7 +49,7 @@
             }
 
             .title {
-                font-size: 120px;
+                font-size: 8vw;
                 color: black;
                
             }
@@ -69,6 +69,7 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+
             }
         </style>
     </head>

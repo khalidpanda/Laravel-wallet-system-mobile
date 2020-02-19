@@ -13,7 +13,7 @@
         <div class="col-lg-12 margin-tb">
            
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ url('user_access/create') }}"> Create New User</a>
+                <a class="btn btn-dark" href="{{ url('user_access/create') }}"> Create New User</a>
             </div>
         </div>
     </div>

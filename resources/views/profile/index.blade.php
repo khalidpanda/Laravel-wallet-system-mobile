@@ -2,7 +2,7 @@
 @section('content')
 @section('title', 'Profile')
 
-<div class="card card-primary card-outline">
+<div class="card card-primary ">
               <div class="card-body box-profile">
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle" src="{{URL::asset('/dist/img/user4.png')}}" alt="User profile picture">

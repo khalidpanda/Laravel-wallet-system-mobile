@@ -7,7 +7,7 @@
 
   <title>Fube Pos</title>
  <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
-
+ <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- overlayScrollbars -->
@@ -86,7 +86,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ url('home') }}" class="brand-link">
+    <a href="index3.html" class="brand-link">
       <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;  
       <span class="brand-text font-weight-light">Pos System</span>
@@ -130,31 +130,6 @@
               </li>
                 <?php endif;?>
                 <?php endif;?>
-
-                 <li class="nav-item has-treeview ">
-            <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-chart-line"></i>
-              <p>
-                Reports
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ url('sales_report') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Sales Report</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ url('product_report') }}" class="nav-link ">
-                  <i class="fas fa-chart-pie nav-icon"></i>
-                  <p>Product Report</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
               
 
                 <?php if (!empty($UserRole1)):?>

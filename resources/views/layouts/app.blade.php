@@ -19,6 +19,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -222,6 +223,7 @@
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+
 <!-- Bootstrap -->
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
@@ -246,7 +248,8 @@
 <script src="{{ asset('plugins/chart.js/Chart.min.js') }}"></script>
 
 <!-- PAGE SCRIPTS -->
-<!-- <script src="{{ asset('dist/js/pages/dashboard2.js') }}"></script> -->
+<script src="{{ asset('dist/js/pages/dashboard3.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 
 
@@ -267,6 +270,63 @@
         order: [ 1, 'asc' ]
     } );
 
+$('.datepicker').datepicker({
+        todayHighlight: true,
+         autoclose: true
+      });
+
+$('.datepicker1').datepicker({
+        format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months",
+    autoclose: true
+
+      });
+  
+   var donutData= {
+      labels: [
+          'Chrome', 
+          'IE',
+          'FireFox', 
+          'Safari', 
+          'Opera', 
+          
+      ],
+      datasets: [
+        {
+          data: [700,500,400,600,300],
+          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc'],
+        }
+      ]
+    }
+
+ var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
+ var pieChartCanvas1 = $('#pieChart1').get(0).getContext('2d');
+ var pieChartCanvas2 = $('#pieChart2').get(0).getContext('2d');
+    var pieData        = donutData;
+    var pieOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    var pieChart = new Chart(pieChartCanvas, {
+      type: 'pie',
+      data: pieData,
+      options: pieOptions      
+    })
+
+    var pieChart1 = new Chart(pieChartCanvas1, {
+      type: 'pie',
+      data: pieData,
+      options: pieOptions      
+    })
+
+    var pieChart2 = new Chart(pieChartCanvas2, {
+      type: 'pie',
+      data: pieData,
+      options: pieOptions      
+    })
 
 
 } );

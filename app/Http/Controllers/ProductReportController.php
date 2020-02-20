@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Auth;  
-use App\Models\User;
+use App\Models\Product;
 use Illuminate\Http\Request;
   
 class ProductReportController extends Controller
@@ -15,9 +15,9 @@ class ProductReportController extends Controller
      */
     public function index()
     {
-        $User = User::where('id', Auth::user()->id)->first();
+        $products = Product::where('product_user', Auth::user()->id)->get();
   
-        return view('product_report.index',compact('User'));
+        return view('product_report.index',compact('products'));
     }
    
     /**

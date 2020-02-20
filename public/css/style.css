@@ -1,4 +1,16 @@
-#text {
+#fube-text-color {
 
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+
+#fube-header {
+
+    background-color:#ff8c00;
+}
+
+
+#fube-text {
     color: #ff8c00;
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Fube Pos</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
         <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -88,8 +89,8 @@
             @endif
 
             <div class="content">
-            <h1 class="title m-b-md">Welcome To</h1>
-                <div class="title m-b-md">
+            <h1 class="title m-b-md" id="fube-text-color">Welcome To</h1>
+                <div class="title m-b-md" >
                     Fube Pos System
                 </div>
 

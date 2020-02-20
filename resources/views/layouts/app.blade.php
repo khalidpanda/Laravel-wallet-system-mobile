@@ -6,8 +6,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Fube Pos</title>
+  
  <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
-
+ <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+ <script src="{{ asset('js/chart.js')}}"></script>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- overlayScrollbars -->

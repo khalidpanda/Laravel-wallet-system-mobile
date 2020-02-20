@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="margin-top: 80px; background-color: #e2e2e2;">
-                <div class="card-header text-white text-center text-bold" style="background-color: black;">{{ __('Ohh dont have an account yet? Register one !') }}</div>
+                <div class="card-header text-white text-center text-bold bg-dark">{{ __('Ohh dont have an account yet? Register one !') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
@@ -64,10 +64,10 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-dark">
+                                <button type="submit" class="btn btn-dark" id="fube-text-color">
                                     {{ __('Register') }}
                                 </button> <br><br>
-                                <p>Already have one?&nbsp;<a href="{{route('login')}}">Login</a></p>
+                                <p>Already have one?&nbsp;<a href="{{route('login')}}" id="fube-text">Login</a></p>
                             </div>
                         </div>
                     </form>

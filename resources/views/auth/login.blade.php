@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="margin-top: 120px; background-color: #e2e2e2;">
-                <div class="card-header text-white text-center text-bold" style="background-color: black;">{{ __('Hello There ! Please login to continue') }}</div>
+                <div class="card-header text-white text-center text-bold bg-dark">{{ __('Hello There ! Please login to continue') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
@@ -57,14 +57,14 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-dark">
+                                <button type="submit" class="btn btn-dark" id="fube-text-color">
                                     {{ __('Login') }}
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a><br><br>
-                                <p>Dont have an account?&nbsp;<a href="{{route('register')}}">Register</a></p>
+                                <p>Dont have an account?&nbsp;<a href="{{route('register')}}" id="fube-text-color">Register</a></p>
                             </div>
                         </div>
                     </form>

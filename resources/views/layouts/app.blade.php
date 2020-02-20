@@ -9,7 +9,7 @@
   
  <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
  <link rel="stylesheet" href="{{ asset('css/style.css')}}">
- <link rel="stylesheet" href="{{ asset('dist/css/theme.css')}}">
+ 
  <script src="{{ asset('js/chart.js')}}"></script>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
@@ -271,7 +271,7 @@
 
 <!-- OPTIONAL SCRIPTS -->
 <script src="{{ asset('dist/js/demo.js') }}"></script>
-<script src="{{ asset('dist/js/pace.js') }}"></script>
+
 
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->

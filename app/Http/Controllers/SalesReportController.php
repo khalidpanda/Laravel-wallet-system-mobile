@@ -6,7 +6,7 @@ use Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
   
-class ProfileController extends Controller
+class SalesReportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class ProfileController extends Controller
     {
         $User = User::where('id', Auth::user()->id)->first();
   
-        return view('profile.index',compact('User'));
+        return view('sales_report.index',compact('User'));
     }
    
     /**

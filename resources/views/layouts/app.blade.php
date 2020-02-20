@@ -120,6 +120,7 @@
               <?php 
               $UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Product Management')->first();
               $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first(); 
+              $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Report') ->first(); 
               ?>
               <?php if (!empty($UserRole)):?>
                 <?php if($UserRole->edit == 'on' || $UserRole->view == 'on'):?>
@@ -132,6 +133,9 @@
                 <?php endif;?>
                 <?php endif;?>
 
+
+                 <?php if (!empty($UserRole2)):?>
+                <?php if($UserRole2->view == 'on'):?>
                  <li class="nav-item has-treeview ">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-chart-line"></i>
@@ -156,6 +160,8 @@
               
             </ul>
           </li>
+           <?php endif;?>
+          <?php endif;?>
               
 
                 <?php if (!empty($UserRole1)):?>

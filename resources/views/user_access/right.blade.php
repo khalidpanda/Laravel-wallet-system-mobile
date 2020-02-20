@@ -78,6 +78,30 @@
            <?php endif;?>
             	></center></td>
         </tr>
+
+        <tr>
+          <td></td>
+            <td>3</td>
+            <td>Report</td>
+            <td><!-- center><input type="checkbox" class="form-check-input" name="reportEdit" id="reportEdit"
+
+              <?php if(!empty($UserRole2)):?>
+            <?php if ($UserRole2->modules == 'Report' && $UserRole2->edit == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center> -->
+                
+              </td>
+
+            <td><center><input type="checkbox" class="form-check-input" name="reportView" id="reportView"
+              <?php if(!empty($UserRole2)):?>
+              <?php if ($UserRole2->modules == 'Report' && $UserRole2->view == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center></td>
+        </tr>
       
     </tbody>
     </table>

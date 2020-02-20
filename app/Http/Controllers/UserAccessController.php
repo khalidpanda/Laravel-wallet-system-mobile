@@ -76,6 +76,12 @@ class UserAccessController extends Controller
       ]);
        $UserRole1->save();
 
+       $UserRole2 = new UserRole([
+        'modules' =>'Report',
+        'user_id'=> $User->id,
+      ]);
+       $UserRole2->save();
+
       toastr()->success('User has been added successfully!');
       return redirect('/user_access');
     }
@@ -151,8 +157,9 @@ class UserAccessController extends Controller
         $User = User::find($id);
         $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management') ->first();
         $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC') ->first();
+        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report') ->first();
 
-        return view('user_access.right', compact('User', 'UserRole', 'UserRole1'));
+        return view('user_access.right', compact('User', 'UserRole', 'UserRole1', 'UserRole2'));
     }
 
     public function rightfunc(Request $request)
@@ -160,6 +167,7 @@ class UserAccessController extends Controller
         $id = $request->get('userID');
         $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management')->first();
         $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC')->first();
+        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report') ->first();
 
 
         if ($UserRole) {
@@ -173,6 +181,13 @@ class UserAccessController extends Controller
            UserRole::where('user_id', $id)->where('modules', 'UAC')->update([
         'edit'=> $request->get('userEdit'),
         'view'=>  $request->get('userView'),
+       ]);
+        }
+
+        if ($UserRole2) {
+           UserRole::where('user_id', $id)->where('modules', 'Report')->update([
+        // 'edit'=> $request->get('reportEdit'),
+        'view'=>  $request->get('reportView'),
        ]);
         }
        

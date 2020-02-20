@@ -40,7 +40,7 @@
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Top 5 Products</h6><br>
     <a href="#" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/product.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/po.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
     </a>
   </div>
 </div>

@@ -3,54 +3,53 @@
 @section('content')
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-6 col-sm-3">
    <!--card start here for widget-->
-   <div class="card" style="width: 28rem;">
+   <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
-    <h5 class="card-title">Products</h5><br>
-   
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link btn btn" style="background-color: #ff8c00;">View</a>
+    <h6 class="card-header text-center text-bold" style="color:#ff8c00;">Latest Orders</h6><br>
+    <a href="#" >
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/order.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14</p>
+    </a>
     
   </div>
 </div>
     </div>
-    <div class="col">
+    <div class="col-6 col-sm-3">
       <!--card start here for widget 2-->
-      <div class="card" style="width: 28rem;">
+      <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
-    <h5 class="card-title">Users</h5><br>
-    
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link btn btn" style="background-color: #ff8c00;">View</a>
+    <h6 class="card-header text-center text-bold" style="color:#ff8c00;">Sales</h6><br>
+    <a href="#" >
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/sale.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44</p>
+    </a>
    
   </div>
 </div>
-    </div>
+    
   </div>
-<br><br><br>
+
   <!-- second widget section strats here-->
-  <div class="row">
-    <div class="col">
+  
+    <div class="col-6 col-sm-3">
    <!--card start here for widget-->
-   <div class="card" style="width: 28rem;">
+   <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
-    <h5 class="card-title">Something comming soon...</h5><br>
-   
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link btn btn" style="background-color: #ff8c00;">View</a>
-    
+  <h6 class="card-header text-center text-bold" style="color:#ff8c00;">Top 5 Products</h6><br>
+    <a href="#" >
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/product.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
+    </a>
   </div>
 </div>
     </div>
-    <div class="col">
+    <div class="col-6 col-sm-3">
       <!--card start here for widget 2-->
-      <div class="card" style="width: 28rem;">
+      <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
-    <h5 class="card-title">Something coming soon...</h5><br>
-    
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link btn btn" style="background-color: #ff8c00;">View</a>
+  <h6 class="card-header text-center text-bold" style="color:#ff8c00;">Stock</h6><br>
+    <a href="#" >
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/Stock.png" width="78" height="78">&nbsp;&nbsp;&nbsp;101</p>
+    </a>
    
   </div>
 </div>
@@ -58,4 +57,6 @@
   </div>
    
 </div>
+
+<h1 id="text">hello</h1>
 @endsection

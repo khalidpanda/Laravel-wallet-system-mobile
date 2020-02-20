@@ -7,7 +7,7 @@
 
   <title>Fube Pos</title>
  <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
-
+ <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- overlayScrollbars -->
@@ -87,7 +87,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ url('home') }}" class="brand-link">
+    <a href="index3.html" class="brand-link">
       <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;  
       <span class="brand-text font-weight-light">Pos System</span>
@@ -132,6 +132,7 @@
               </li>
                 <?php endif;?>
                 <?php endif;?>
+<<<<<<< HEAD
 
 
                  <?php if (!empty($UserRole2)):?>
@@ -162,6 +163,8 @@
           </li>
            <?php endif;?>
           <?php endif;?>
+=======
+>>>>>>> 5c53c0981c7757ad06b84f151186f7b3f3ccb80f
               
 
                 <?php if (!empty($UserRole1)):?>

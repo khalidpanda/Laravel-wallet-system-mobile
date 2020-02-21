@@ -44,3 +44,5 @@ if (chBar) {
       display: false
     }
   }
+})
+};

@@ -23,7 +23,7 @@
       <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
     <h6 class="card-header text-center text-bold" id="fube-header">Sales</h6><br>
-    <a href="#" >
+    <a href="{{url('sales_report')}}" >
     <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/sale.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44</p>
     </a>
    
@@ -39,8 +39,8 @@
    <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Top 5 Products</h6><br>
-    <a href="#" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/po.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
+    <a href="{{url('product_report')}}" >
+    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/pro1.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
     </a>
   </div>
 </div>

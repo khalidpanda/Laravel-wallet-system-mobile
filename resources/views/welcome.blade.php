@@ -72,6 +72,67 @@
                 margin-bottom: 30px;
 
             }
+
+
+            /*text css effects start here */
+
+            @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+
+body {
+  background-color: #FFFFFF;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ff8c00;
+  text-align: center;
+  width: 100vw;
+  font-weight: 1000;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+#fly-in {
+  font-size: 4em;
+  margin: 40vh auto;
+  height: 40vh; 
+  text-transform: uppercase;
+}
+
+#fly-in span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+
+#fly-in div {
+ position: fixed; 
+  margin: 2vh 0;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 16s linear infinite;
+}
+
+#fly-in div:nth-child(2) { animation-delay: 2s}
+#fly-in div:nth-child(3) { animation-delay: 4s}
+#fly-in div:nth-child(4) { animation-delay: 6s}
+/*#fly-in div:nth-child(5) { animation-delay: 9s}
+#fly-in div:nth-child(6) { animation-delay: 20s}
+#fly-in div:nth-child(7) { animation-delay: 24s}
+#fly-in div:nth-child(8) { animation-delay: 28s} */
+
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    3% { opacity: 1;filter: blur(0); transform:scale(1)}
+    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+   /* 13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    80% { opacity: 0}
+    100% { opacity: 0} */
+}
+            
         </style>
     </head>
     <body>
@@ -82,18 +143,27 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a id="fube-text-color" href="{{ route('login') }}">Login</a>
+                        <a class="text-bold" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-            <h1 class="title m-b-md" id="fube-text-color">Welcome To</h1>
+<!-- for later use -->
+          <!--  <div class="content">
+            <h1 class="title m-b-md text-bold" id="fube-text-color">Welcome To</h1>
                 <div class="title m-b-md" >
                     Fube Pos System
-                </div>
+                </div> -->
 
+                <div id="fly-in">  
+<div style="font-size: 6vw;"><span></span>welcome To</div><br>
+<div style="color: black; font-size: 8vw; font-family: 'Montserrat', sans-serif;">Fube  Pos System</div><br>
+<!-- if need credits -->
+<!--<div>By</div><br>
+<div><span></span>Fube Technology .</div> -->
+
+</div>
+<!-- these are laravel default welcome page links-->
            <!--     <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

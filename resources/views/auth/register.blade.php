@@ -64,7 +64,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-dark" id="fube-text-color">
+                                <button type="submit" class="fube-login" id="fube-text-color">
                                     {{ __('Register') }}
                                 </button> <br><br>
                                 <p>Already have one?&nbsp;<a href="{{route('login')}}" id="fube-text">Login</a></p>

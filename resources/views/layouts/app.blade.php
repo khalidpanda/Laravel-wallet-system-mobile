@@ -125,16 +125,7 @@
               $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first(); 
               $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Report') ->first(); 
               ?>
-              <?php if (!empty($UserRole)):?>
-                <?php if($UserRole->edit == 'on' || $UserRole->view == 'on'):?>
-                  <li class="nav-item">
-                <a href="{{ url('products') }}" class="nav-link ">
-                  <i class="fa fa-shopping-bag nav-icon"></i>
-                  <p>Product Management</p>
-                </a>
-              </li>
-                <?php endif;?>
-                <?php endif;?>
+             
 
 
                  <?php if (!empty($UserRole2)):?>
@@ -154,12 +145,7 @@
                   <p>Sales Report</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="{{ url('product_report') }}" class="nav-link ">
-                  <i class="fas fa-chart-pie nav-icon"></i>
-                  <p>Product Report</p>
-                </a>
-              </li>
+             
               
             </ul>
           </li>

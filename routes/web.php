@@ -16,22 +16,16 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('products','ProductController');
+
 Route::resource('profile','ProfileController');
 Route::resource('user_access','UserAccessController');
 Route::resource('sales_report','SalesReportController');
-Route::resource('product_report','ProductReportController');
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//products
-Route::post('/products/store', 'ProductController@store')->name('products.store');
-Route::get('/products/create', 'ProductController@create')->name('products.create');
-Route::get('/products/show/{product}', 'ProductController@show')->name('products.show');
-Route::post('products/update','ProductController@update');
-Route::delete('/products/destroy/{product}', 'ProductController@destroy')->name('products.destroy');
-Route::get('/products/edit/{product}', 'ProductController@edit')->name('products.edit');
+
 
 //profile
 Route::post('profile/update','ProfileController@update');
@@ -55,11 +49,3 @@ Route::post('sales_report/update','SalesReportController@update');
 Route::delete('/sales_report/destroy/{id}', 'SalesReportController@destroy')->name('sales_report.destroy');
 Route::get('/sales_report/edit/{id}', 'SalesReportController@edit')->name('sales_report.edit');
 
-
-//product report
-Route::post('/product_report/store', 'ProductReportController@store')->name('product_report.store');
-Route::get('/product_report/create', 'ProductReportController@create')->name('product_report.create');
-Route::get('/product_report/show/{id}', 'ProductReportController@show')->name('product_report.show');
-Route::post('product_report/update','ProductReportController@update');
-Route::delete('/product_report/destroy/{id}', 'ProductReportController@destroy')->name('product_report.destroy');
-Route::get('/product_report/edit/{id}', 'ProductReportController@edit')->name('product_report.edit');

@@ -5,10 +5,11 @@
 
 @section('content')
 <div class="container">
+  <div class="text-center text-white">Services</div><br>
   <div class="row">
-    <div class="col-6 col-sm-3">
+  <br>
    <!--card start here for widget-->
-   <div class="card" style="width: 12rem;">
+ <!--  <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
     <h6 class="card-header text-center text-bold" id="fube-header">Latest Orders</h6><br>
     <a href="#" >
@@ -18,9 +19,9 @@
   </div>
 </div>
     </div>
-    <div class="col-6 col-sm-3">
+    <div class="col-6 col-sm-3"> -->
       <!--card start here for widget 2-->
-      <div class="card" style="width: 12rem;">
+  <!--    <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
     <h6 class="card-header text-center text-bold" id="fube-header">Sales</h6><br>
     <a href="{{url('sales_report')}}" >
@@ -30,13 +31,13 @@
   </div>
 </div>
     
-  </div>
+  </div> -->
 
   <!-- second widget section strats here-->
   
-    <div class="col-6 col-sm-3">
+   
    <!--card start here for widget-->
-   <div class="card" style="width: 12rem;">
+ <!--  <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Top 5 Products</h6><br>
     <a href="{{url('product_report')}}" >
@@ -45,9 +46,9 @@
   </div>
 </div>
     </div>
-    <div class="col-6 col-sm-3">
+    <div class="col-6 col-sm-3"> -->
       <!--card start here for widget 2-->
-      <div class="card" style="width: 12rem;">
+ <!--     <div class="card" style="width: 12rem;">
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Stock</h6><br>
     <a href="#" >
@@ -73,22 +74,15 @@
                     <span>Orders Over Time</span>
                   </p>
                 
-                </div>
+                </div> -->
                 <!-- /.d-flex -->
 
-                <div class="position-relative mb-4">
-                  <canvas id="panda" style="color:white;" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
+            <div class="row">
+  <div class="col text-center s"><a href="" class="btn btn-outline-warning " style="font-size: 2vh; font-family: helvetica;"><i class="fa fa-car fa-2x" aria-hidden="true" ></i><br>iCar</a></div>
+  <div class="col  text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;"><i class="fa fa-car fa-2x" aria-hidden="true"></i><br>iRental</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;"><i class="fa fa-car fa-2x" aria-hidden="true"></i><br>iPayment</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;"><i class="fa fa-car fa-2x" aria-hidden="true"></i><br>iBook</a></div>
+</div>
               </div>
             </div>
 

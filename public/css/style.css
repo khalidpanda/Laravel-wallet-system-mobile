@@ -1,38 +1,129 @@
-#fube-text-color {
+.main-text {
 
-    color: #ff8c00;
-    font-weight: bold;
+    color: #e4aa52;
+}
+
+.bg {
+    background-color: #0a0514;
+}
+
+.log-btn {
+background: rgb(236,144,4);
+background: linear-gradient(99deg, rgba(236,144,4,1) 0%, rgba(241,184,99,1) 82%, rgba(255,210,140,1) 100%);
+ width: 80%;
+ height: 8vh;
+ margin-left: -55%;
+ border-radius: 5;
+ position: fixed;
+
+text-align: center;
+
+}
+
+a.button1{
+background: rgb(236,144,4);
+background: linear-gradient(99deg, rgba(236,144,4,1) 0%, rgba(241,184,99,1) 82%, rgba(255,210,140,1) 100%);
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.20em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+}
+@media all and (max-width:50em){
+ a.button1{
+  display:block;
+  margin:0.4em auto;
+ }
+}
+
+a.button2{
+ 
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button2:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ a.button2{
+  display:block;
+  margin:0.4em auto;
+ }
 }
 
 
-#fube-header {
-
-    background-color:#ff8c00;
+.me {
+    background-color:#e4aa52;
+    color: black;
+}
+.link {
+    color: black;
 }
 
-
-#fube-text {
-    color: #ff8c00;
+.link2 {
+    color:#e4aa52;
+   margin-right: 3em;
+    margin-top: 2em;
+}
+.link3 {
+    color:#e4aa52;
+    margin-left: 3em;
+    margin-top: 2em;
 }
 
+.top-logo {
 
-.fube-login {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: black;
-    padding: 6px;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-    }
+    color: #f8ad3a;
+    margin-top: 2em;
+}
 
-    .fube-login:hover {
-        background: #ff8c00;
-        letter-spacing: 1px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-        transition: all 0.4s ease 0s;
-        }
+.user-img {
+
+    margin-left: 13em;
+}
+
+.new1 {
+   background-color:  #f8ad3a;
+}
+
+.top {
+    color: white;
+}
+
+.top-btn {
+   
+   
+    border-radius: 25px;
+}
+
+.vl {
+
+    border-left: 1px solid white;
+    height: 3em;
+}
+
+.s {
+
+  
+    color: white;
+}

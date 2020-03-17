@@ -10,6 +10,18 @@
         <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  
 
         <!-- Styles -->
      <style>
@@ -17,7 +29,7 @@
         
                 height: 100%;
 
-
+                background: #1b0447;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -41,8 +53,8 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                right: 35%;
+                top: 70%;
             }
 
             .content {
@@ -58,14 +70,10 @@
 
 
             .links > a {
-                color: black;
-                font: bold;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
+                color: white;
+               
+
+                
             }
 
             .m-b-md {
@@ -81,12 +89,12 @@
 
 
 body {
-  background-color: #FFFFFF;
+  background-color: #0a0514;
 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #ff8c00;
+  color: #e4aa52;
   text-align: center;
   width: 100vw;
   font-weight: 1000;
@@ -94,45 +102,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#fly-in {
-  font-size: 4em;
-  margin: 40vh auto;
-  height: 40vh; 
-  text-transform: uppercase;
-}
-
-#fly-in span {
-  display: block;
-  font-size: .4em;
-  opacity: .8;
-}
-
-#fly-in div {
- position: fixed; 
-  margin: 2vh 0;
-  opacity: 0;
-  left: 10vw;
-  width: 80vw;
-  animation: switch 16s linear infinite;
-}
-
-#fly-in div:nth-child(2) { animation-delay: 2s}
-#fly-in div:nth-child(3) { animation-delay: 4s}
-#fly-in div:nth-child(4) { animation-delay: 6s}
-/*#fly-in div:nth-child(5) { animation-delay: 9s}
-#fly-in div:nth-child(6) { animation-delay: 20s}
-#fly-in div:nth-child(7) { animation-delay: 24s}
-#fly-in div:nth-child(8) { animation-delay: 28s} */
-
-@keyframes switch {
-    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
-    3% { opacity: 1;filter: blur(0); transform:scale(1)}
-    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
-   /* 13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
-    80% { opacity: 0}
-    100% { opacity: 0} */
-}
-            
+     
         </style>
     </head>
     <body>
@@ -143,8 +113,8 @@ body {
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a id="fube-text-color" href="{{ route('login') }}">Login</a>
-                        <a class="text-bold" href="{{ route('register') }}">Register</a>
+                        <a class="btn btn-lg button1 text-center" href="{{ route('login') }}">Login</a><br><br>
+                        <a class="btn btn-lg button2" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
@@ -156,8 +126,8 @@ body {
                 </div> -->
 
                 <div id="fly-in">  
-<div style="font-size: 6vw;"><span></span>welcome To</div><br>
-<div style="color: black; font-size: 8vw; font-family: 'Montserrat', sans-serif;">Fube  Pos System</div><br>
+<div style="color: white; font-size: 6vw;"><span></span>welcome To</div><br>
+<div style=" font-size: 8vw; font-family: 'Montserrat', sans-serif;">icommunity</div><br>
 <!-- if need credits -->
 <!--<div>By</div><br>
 <div><span></span>Fube Technology .</div> -->

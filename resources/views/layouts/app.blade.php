@@ -51,11 +51,7 @@
     </div>
   </div>
     
-    
-
-
-    
-
+   
     <a href="{{ url('home') }}" class="brand-link">
       <!-- <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;   -->

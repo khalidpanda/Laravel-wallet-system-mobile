@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Fube Pos</title>
+  <title>E-Wallet System</title>
   
- <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
+ <!-- <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png"> -->
  <link rel="stylesheet" href="{{ asset('css/style.css')}}">
  
  <script src="{{ asset('js/chart.js')}}"></script>
@@ -54,32 +54,13 @@
     
 
 
-    <!-- SEARCH FORM -->
-   <!-- <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
+    
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-     
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
- <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4"> -->
-    <!-- Brand Logo -->
- <!--   <a href="{{ url('home') }}" class="brand-link">
-      <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
-           style="opacity: .8">&nbsp;&nbsp;  
-      <span class="brand-text font-weight-light">Pos System</span>
-    </a> -->
+    <a href="{{ url('home') }}" class="brand-link">
+      <!-- <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
+           style="opacity: .8">&nbsp;&nbsp;   -->
+      <span class="brand-text font-weight-light">E-Wallet System</span>
+    </a>
 
     <!-- Sidebar -->
   <!--  <div class="sidebar"> -->
@@ -111,7 +92,6 @@
               $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Report') ->first(); 
               ?>
              
-
 
                  <?php if (!empty($UserRole2)):?>
                 <?php if($UserRole2->view == 'on'):?>
@@ -149,6 +129,14 @@
                <?php endif;?>
                 <?php endif;?>
 
+                 <li class="nav-item">
+                <a href="{{ url('wallet') }}" class="nav-link ">
+                  <i class="fas fa-wallet nav-icon"></i>
+                  <p>Wallet</p>
+                </a>
+              </li>
+
+
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
                   <i class="fa fa-user nav-icon"></i>
@@ -180,6 +168,7 @@
     <!-- Content Header (Page header) -->
     <div class="content-header bg">
       <div class="container-fluid">
+
       
 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
    <div class="row">
@@ -212,6 +201,14 @@
     </div>
   </div>
    <hr class="new1">
+
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">@yield('title')</h1>
+          </div><!-- /.col -->
+          
+        </div><!-- /.row -->
+
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
@@ -267,19 +264,6 @@
 <!-- OPTIONAL SCRIPTS -->
 <script src="{{ asset('dist/js/demo.js') }}"></script>
 
-
-<!-- PAGE PLUGINS -->
-<!-- jQuery Mapael -->
-<script src="{{ asset('plugins/jquery-mousewheel/jquery.mousewheel.js') }}"></script>
-<script src="{{ asset('plugins/raphael/raphael.min.js') }}"></script>
-<script src="{{ asset('plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
-<script src="{{ asset('plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
-<!-- ChartJS -->
-<script src="{{ asset('plugins/chart.js/Chart.min.js') }}"></script>
-
-<!-- PAGE SCRIPTS -->
-<script src="{{ asset('dist/js/pages/dashboard3.js') }}"></script>
-<script src="{{ asset('dist/js/pages/dashboard4.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 
@@ -314,50 +298,7 @@ $('.datepicker1').datepicker({
 
       });
   
-   var donutData= {
-      labels: [
-          'Chrome', 
-          'IE',
-          'FireFox', 
-          'Safari', 
-          'Opera', 
-          
-      ],
-      datasets: [
-        {
-          data: [700,500,400,600,300],
-          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc'],
-        }
-      ]
-    }
-
- var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
- var pieChartCanvas1 = $('#pieChart1').get(0).getContext('2d');
- var pieChartCanvas2 = $('#pieChart2').get(0).getContext('2d');
-    var pieData        = donutData;
-    var pieOptions     = {
-      maintainAspectRatio : false,
-      responsive : true,
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    var pieChart = new Chart(pieChartCanvas, {
-      type: 'pie',
-      data: pieData,
-      options: pieOptions      
-    })
-
-    var pieChart1 = new Chart(pieChartCanvas1, {
-      type: 'pie',
-      data: pieData,
-      options: pieOptions      
-    })
-
-    var pieChart2 = new Chart(pieChartCanvas2, {
-      type: 'pie',
-      data: pieData,
-      options: pieOptions      
-    })
+ 
 
 
 } );

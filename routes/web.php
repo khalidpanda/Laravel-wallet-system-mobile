@@ -12,26 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/auth/login');
 });
 
 Auth::routes();
 
-Route::resource('profile','ProfileController');
-Route::resource('user_access','UserAccessController');
-Route::resource('sales_report','SalesReportController');
-
-
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
 //profile
+Route::get('/profile', 'ProfileController@index');
+Route::get('/profile/account', 'ProfileController@account')->name('profile.account');
 Route::post('profile/update','ProfileController@update');
 Route::get('/profile/edit/{profile}', 'ProfileController@edit')->name('profile.edit');
 
 //user access
+Route::get('/user_access', 'UserAccessController@index');
 Route::post('/user_access/store', 'UserAccessController@store')->name('user_access.store');
 Route::get('/user_access/create', 'UserAccessController@create')->name('user_access.create');
 Route::get('/user_access/show/{id}', 'UserAccessController@show')->name('user_access.show');
@@ -41,11 +37,37 @@ Route::get('/user_access/edit/{id}', 'UserAccessController@edit')->name('user_ac
 Route::get('/user_access/right/{id}', 'UserAccessController@right')->name('user_access.right');
 Route::post('user_access/rightfunc','UserAccessController@rightfunc');
 
-//sales report
-Route::post('/sales_report/store', 'SalesReportController@store')->name('sales_report.store');
-Route::get('/sales_report/create', 'SalesReportController@create')->name('sales_report.create');
-Route::get('/sales_report/show/{id}', 'SalesReportController@show')->name('sales_report.show');
-Route::post('sales_report/update','SalesReportController@update');
-Route::delete('/sales_report/destroy/{id}', 'SalesReportController@destroy')->name('sales_report.destroy');
-Route::get('/sales_report/edit/{id}', 'SalesReportController@edit')->name('sales_report.edit');
+//topup
+Route::get('/wallet', 'WalletController@index');
+Route::post('/wallet/topup', 'WalletController@topup');
+Route::get('/wallet/topupresult/{amount}', 'WalletController@topupresult');
+Route::get('/transhistory', 'WalletController@transhistory')->name('wallet.transhistory');
+
+//rewards
+Route::get('/rewards', 'RewardsController@index')->name('rewards.index');
+Route::post('/rewards/store', 'RewardsController@store')->name('rewards.store');
+Route::get('/rewards/create', 'RewardsController@create')->name('rewards.create');
+Route::get('/rewards/show/{id}', 'RewardsController@show')->name('rewards.show');
+Route::post('rewards/update','RewardsController@update');
+Route::delete('/rewards/destroy/{id}', 'RewardsController@destroy')->name('rewards.destroy');
+Route::get('/rewards/edit/{id}', 'RewardsController@edit')->name('rewards.edit');
+
+//cars
+Route::get('/cars', 'CarsController@index')->name('cars.index');
+Route::get('/cars/carstype', 'CarsController@carstype')->name('cars.carstype');
+Route::get('/cars/carsrent', 'CarsController@carsrent')->name('cars.carsrent');
+Route::get('/cars/carsbuy', 'CarsController@carsbuy')->name('cars.carsbuy');
+Route::post('/cars/store', 'CarsController@store')->name('cars.store');
+Route::get('/cars/create', 'CarsController@create')->name('cars.create');
+Route::get('/cars/show/{id}', 'CarsController@show')->name('cars.show');
+Route::post('cars/update','CarsController@update');
+Route::delete('/cars/destroy/{id}', 'CarsController@destroy')->name('cars.destroy');
+Route::get('/cars/edit/{id}', 'CarsController@edit')->name('cars.edit');
+
+//history
+Route::get('/history', 'HistoryController@index');
+
+//notification
+Route::get('/notification', 'NotificationController@index');
+
 

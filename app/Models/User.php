@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $role
  * @property string $remember_token
  * @property string $wallet
+ * @property string $points
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -39,6 +40,7 @@ class User extends Model
 		'password',
 		'role',
 		'remember_token',
-		'wallet'
+		'wallet',
+		'points'
 	];
 }

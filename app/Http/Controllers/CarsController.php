@@ -1,23 +1,18 @@
 <?php
-  
+
 namespace App\Http\Controllers;
 
 use Auth;  
 use App\Models\User;
 use Illuminate\Http\Request;
-  
-class SalesReportController extends Controller
+
+class CarsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $User = User::where('id', Auth::user()->id)->first();
   
-        return view('sales_report.index',compact('User'));
+        return view('cars.index',compact('User'));
     }
    
     /**

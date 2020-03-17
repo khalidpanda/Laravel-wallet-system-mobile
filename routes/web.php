@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/auth/login');
 });
 
 Auth::routes();
@@ -20,6 +20,7 @@ Auth::routes();
 Route::resource('profile','ProfileController');
 Route::resource('user_access','UserAccessController');
 Route::resource('sales_report','SalesReportController');
+// Route::resource('wallet','WalletController');
 
 
 
@@ -48,4 +49,10 @@ Route::get('/sales_report/show/{id}', 'SalesReportController@show')->name('sales
 Route::post('sales_report/update','SalesReportController@update');
 Route::delete('/sales_report/destroy/{id}', 'SalesReportController@destroy')->name('sales_report.destroy');
 Route::get('/sales_report/edit/{id}', 'SalesReportController@edit')->name('sales_report.edit');
+
+//topup
+Route::get('/wallet', 'WalletController@index');
+Route::post('/wallet/topup', 'WalletController@topup');
+Route::get('/wallet/topupresult/{amount}', 'WalletController@topupresult');
+Route::get('/transhistory', 'WalletController@transhistory')->name('wallet.transhistory');
 

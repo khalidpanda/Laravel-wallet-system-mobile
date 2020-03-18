@@ -25,27 +25,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   
 </head>
-<body class=" layout-footer-fixed ">
+<body class="layout-footer-fixed ">
   
-<div class="wrapper bg">
+<div class="wrapper bg1 bg">
   <!-- Navbar -->
 <!--  <nav class="main-header navbar navbar-expand navbar-white navbar-light">-->
     <!-- Left navbar links -->
-    <div class="row">
+    <div class="row no-gutters">
     <div class="col">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link  link2 text-center" data-widget="pushmenu" href="#"><i class="fa fa-qrcode fa-lg"></i><br>pay</a>
+        <a class="nav-link  link2 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('icon/pay2.png') }}"><br>pay</a>
       </li>
     </ul>
     </div>
     <div class="col">
-    <h5 class="top-logo">icommunity</h5>
+    <img class="logo" src="{{ asset('icon/logo.png') }}">
     </div>
     <div class="col">
       <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link  link3 text-center" data-widget="pushmenu" href="#"><i class="fa fa-qrcode fa-lg"></i><br>Receive</a>
+        <a class="nav-link  link3 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('icon/pay2.png') }}"><br>Receive</a>
       </li>
     </ul>
     </div>
@@ -160,9 +160,9 @@
  <!-- </aside> -->
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper bg">
+  <div class="content-wrapper bg1 bg">
     <!-- Content Header (Page header) -->
-    <div class="content-header bg">
+    <div class="content-header bg1 bg">
       <div class="container-fluid">
 
       
@@ -175,7 +175,7 @@
     </div>
     <div class="col">
      <div class="image user-img">
-          <img src="{{URL::asset('/dist/img/user4.png')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{URL::asset('icon/profile.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
     </div>
   </div>
@@ -229,13 +229,13 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer me text-center" style="background:#e4aa52;">
+  <footer class="main-footer me text-center" style="background:#F4B84A;">
   <div class="navbar me "  id="myNavbar">
-  <a class="link" href="#home"><i class="fa fa-award fa-2x"></i><br>Reward</a>
-  <a class="link" href="#news"><i class="fa fa-envelope fa-2x"></i><br>Message</a>
-  <a class="link" href="#contact"><i class="fa fa-wallet fa-2x"></i><br>Wallet</a>
-  <a class="link"href="#about"><i class="fa fa-history fa-2x"></i><br>History</a>
-   <a class="link" href="#about"><i class="fa fa-user fa-2x"></i><br>Account</a>
+  <a class="link" href="#home"><img class="menu1" src="{{ asset('icon/Reward.png') }}"><br>Reward</a>
+  <a class="link" href="#news"><img class="menu1" src="{{ asset('icon/Message.png') }}"><br>Message</a>
+  <a class="link" href="#contact"><img class="menu1" src="{{ asset('icon/Wallet.png') }}"><br>Wallet</a>
+  <a class="link"href="#about"><img class="menu1" src="{{ asset('icon/History.png') }}"><br>History</a>
+   <a class="link" href="#about"><img class="menu1" src="{{ asset('icon/Account.png') }}"><br>Account</a>
   
 </div>
   </footer>

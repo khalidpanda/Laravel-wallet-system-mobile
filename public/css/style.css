@@ -4,7 +4,7 @@
 }
 
 .bg {
-    background-color: #0a0514;
+    background-color: #161A27;
 }
 
 .log-btn {
@@ -73,7 +73,7 @@ a.button2:hover{
 
 
 .me {
-    background-color:#e4aa52;
+    background-color:#F4B84A;
     color: black;
 }
 .link {
@@ -122,8 +122,60 @@ a.button2:hover{
     height: 3em;
 }
 
-.s {
+.service1 {
+    margin-left: 6em;
+    display: inline-block;
+    float: center;
 
-  
-    color: white;
+}
+.logo {
+
+    width: 6em;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.menu1 {
+    width: 2em;
+}
+
+.service {
+width: 3em;
+position: center;
+
+}
+
+
+.pay {
+    width: 2em;
+}
+.banner {
+    width: 20.5em;
+}
+
+
+.follow {
+    margin-left: 16em; 
+}
+
+.bg1 {
+
+    background-image: url(../icon/audi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fcolor {
+    color: #F4B84A;
+}
+.banner2 {
+    width: 18em;
+
+}
+.follow2 {
+    margin-left: 15em; 
+}
+
+.something {
+    height: 5em;
 }

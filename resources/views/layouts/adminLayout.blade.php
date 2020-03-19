@@ -157,6 +157,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
+            <br>
             <h1 class="m-0 text-dark">@yield('title')</h1>
           </div><!-- /.col -->
           
@@ -169,7 +170,7 @@
     <section class="content">
       <div class="container-fluid">
         <!-- Info boxes -->
-      
+     
              @yield('content')
         <!-- /.row -->
       </div><!--/. container-fluid -->

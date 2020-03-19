@@ -61,7 +61,7 @@ class WalletController extends Controller
     null,
      Auth::user()->name,
     \Duit\MYR::given($amount*100),
-    ['callback_url' => 'http://localhost/fube-wallet/public/wallet/topupresult/'.$amount.'', 'redirect_url' => 'http://localhost/fube-wallet/public/wallet/topupresult/'.$amount.''],
+    ['callback_url' => 'https://phpstack-134670-1202019.cloudwaysapps.com/wallet/topupresult/'.$amount.'', 'redirect_url' => 'https://phpstack-134670-1202019.cloudwaysapps.com/wallet/topupresult/'.$amount.''],
     'Billplz payment gateway'
 );
         

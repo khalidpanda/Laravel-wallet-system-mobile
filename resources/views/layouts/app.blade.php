@@ -52,11 +52,11 @@
   </div>
     
    
-    <a href="{{ url('home') }}" class="brand-link">
+  <!--  <a href="{{ url('home') }}" class="brand-link"> -->
       <!-- <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;   -->
-      <span class="brand-text font-weight-light">E-Wallet System</span>
-    </a>
+  <!--    <span class="brand-text font-weight-light">E-Wallet System</span>
+    </a> -->
 
     <!-- Sidebar -->
   <!--  <div class="sidebar"> -->
@@ -171,11 +171,12 @@
     <div class="col">
         <div class="info">
           <a href="{{ url('profile') }}" class="d-block">{{ Auth::user()->name}}</a>
+
         </div>
     </div>
     <div class="col">
-     <div class="image user-img">
-          <img src="{{URL::asset('icon/profile.png')}}" class="img-circle elevation-2" alt="User Image">
+     <div class=" user-img">
+          <img src="{{URL::asset('icon/profile.png')}}" class="img-circle  img-responsive" alt="User Image">
         </div>
     </div>
   </div>

@@ -78,10 +78,10 @@
                 <!-- /.d-flex -->
 
             <div class="row service1 fcolor ">
-  <div class="col text-center fcolor"><a href="" class="btn btn-outline-warning " style="font-size: 2vh; font-family: helvetica;  color: #F4B84A;"><img class="service" src="{{ asset('icon/car.png') }}"><br>iCar</a></div>
-  <div class="col  text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;  color: #F4B84A;"><img class="service" src="{{ asset('icon/rent.png') }}"><br>iRental</a></div>
-  <div class="col text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;  color: #F4B84A;"><img class="service" src="{{ asset('icon/pay.png') }}"><br>iPayment</a></div>
-  <div class="col text-center"><a href="" class="btn btn-outline-warning"style="font-size: 2vh;  color: #F4B84A;"><img class="service" src="{{ asset('icon/book.png') }}"><br>iBook</a></div>
+  <div class="col text-center fcolor"><a href="" class="btn btn-outline-warning service3" style="font-size: 11px; font-family: helvetica;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ asset('icon/car.png') }}"><br>iCar</a></div>
+  <div class="col  text-center"><a href="cars/" class="btn btn-outline-warning"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ asset('icon/rent.png') }}"><br>iRental</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service img-responsive" src="{{ asset('icon/pay.png') }}"><br>iPayment</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;w"><img class="service" src="{{ asset('icon/book.png') }}"><br>iBook</a></div>
 </div>
               </div>
             </div>
@@ -89,10 +89,13 @@
             <br>
           <hr class="new1">
           <br>
-          <img class="banner img-rounded" src="{{ asset('icon/banner.jpg') }}">
+          <div class="row">
+            <div class="col">
+          <img class="banner img-rounded img-responsive" src="{{ asset('icon/banner.jpg') }}">
           <br><br>
           <p class="text-white">Rewards<span class="follow">></span></p>
-
+</div>
+</div>
           <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
 
   <!--Controls-->
@@ -108,9 +111,9 @@
     <!--First slide-->
     <div class="carousel-item active">
 
-      <div class="col-md-3 mb-3">
+      <div class="col">
         <div class="card">
-         <img class=" banner2" src="{{ asset('icon/caru.jpg') }}"
+         <img class="img-responsive banner2" src="{{ asset('icon/caru.jpg') }}"
             >
         </div>
       </div>
@@ -123,9 +126,9 @@
     <!--Second slide-->
     <div class="carousel-item">
 
-      <div class="col-md-3 mb-3">
+      <div class="col">
         <div class="card">
-          <img class="img-fluid banner2" src="{{ asset('icon/caru.jpg') }}"
+          <img class="img-responsive banner2" src="{{ asset('icon/caru.jpg') }}"
             alt="Card image cap">
         </div>
       </div>

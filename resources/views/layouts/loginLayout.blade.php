@@ -22,7 +22,7 @@
   
 </head>
 
-<body>
+<body  class="bg1 bg">
 
   @yield('content')
     <!-- /.login-card-body -->

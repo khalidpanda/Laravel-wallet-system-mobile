@@ -99,7 +99,8 @@ a.button2:hover{
 
 .user-img {
 
-    margin-left: 13em;
+    margin-left: 600%;
+    position: relative;
 }
 
 .new1 {
@@ -127,12 +128,13 @@ a.button2:hover{
     display: inline-block;
     float: center;
 
+
 }
 .logo {
 
-    width: 6em;
-    margin-left: 1em;
-    margin-top: 2em;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 20%;
 }
 
 .menu1 {
@@ -140,8 +142,9 @@ a.button2:hover{
 }
 
 .service {
-width: 3em;
+width: 100%;
 position: center;
+
 
 }
 
@@ -150,12 +153,12 @@ position: center;
     width: 2em;
 }
 .banner {
-    width: 20.5em;
+    width: 100%;
 }
 
 
 .follow {
-    margin-left: 16em; 
+    margin-left: 80%; 
 }
 
 .bg1 {
@@ -169,13 +172,176 @@ position: center;
     color: #F4B84A;
 }
 .banner2 {
-    width: 18em;
+    width: 100%;
 
 }
 .follow2 {
-    margin-left: 15em; 
+    margin-left: 77%; 
 }
 
 .something {
     height: 5em;
+}
+
+.service3 {
+     background-color: #1E212C;
+     border-radius: 10em;
+}
+
+.back {
+    width: 18%;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+.login-top {
+    height: 10em;
+}
+.sign {
+    
+    margin-top: 10%;
+    margin-left:  30%;
+    color: white;
+    font-size: 4vw;
+}
+
+.log-sign {
+
+    color: white;
+    font-weight: bold;
+    font-size: 13vw;
+    margin-right:55%;
+    margin-top: 8%;
+    position: relative;
+}
+
+.log-line {
+  border-top: 2px solid #F4B84A;
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+
+.log-form {
+    color: white;
+}
+
+.md-input {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 11%;
+}
+    .md-input .md-form-control {
+        font-size: 16px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        border: none;
+        border-bottom: 2px solid #F4B84A;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    .md-input label {
+        color: #F4B84A;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .md-input .bar:before {
+        left: 50%;
+    }
+
+    .md-input .bar:after {
+        right: 50%;
+    }
+
+    .md-input .highlight {
+        position: absolute;
+        height: 60%;
+        width: 70px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    .md-input .md-form-control:focus ~ label, .md-input .md-form-control:valid ~ label {
+    top: -15px;
+    font-size: 14px;
+    color: white;
+}
+.md-input .bar:before, .md-input .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #F4B84A;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.md-input .md-form-control:focus ~ .bar:before, .md-input .md-form-control:focus ~ .bar:after {
+    width: 10%;
+}
+
+
+.log-button {
+
+    background: rgb(236,144,56);
+background: linear-gradient(90deg, rgba(236,144,56,1) 45%, rgba(244,193,95,1) 88%, rgba(244,193,95,1) 100%);
+width: 70%;
+margin-left: 16%;
+height: 50%;
+border: none;
+border-radius: 30px;
+}
+
+.forgot {
+   margin-left: 23%;
+   font-size: 4vw;
+}
+
+
+.gap5x {
+    height: 160px;
+}
+
+.i-rent {
+     color: white;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-right:55%;
+    margin-top: 8%;
+    position: relative;
+}
+
+.i-box {
+
+    
+  background-color: #1E212C;
+  width: 30%;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 25px;
+
+}
+
+.i-rent2 {
+    width: 100%;
+    
+
+}
+
+.i-box:active {
+     background-color: #F4B84A;
 }

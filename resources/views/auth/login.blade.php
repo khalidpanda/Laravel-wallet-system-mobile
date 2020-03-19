@@ -10,11 +10,12 @@
     <div class="row justify-content-center">
 
 <div class="row no-gutters">
+
     <div class="col">
-<a href="#"><img class="back" src="{{URL::asset('icon/Back.png')}}"></a>
+<a href="#"><img class="back" src="{{url('/uploads/Back.png')}}"></a>
     </div>
      <div class="col sign">
-<a class="tetx-white sign" href="{{route('register')}}">SIGH UP</a>
+<a class="text-white sign" href="{{route('register')}}">SIGN UP</a>
     </div>
 </div>
 

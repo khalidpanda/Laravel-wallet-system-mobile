@@ -7,11 +7,11 @@
 
   <title>E-Wallet System</title>
   
- <!-- <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png"> -->
+ <!-- <link rel="shortcut uploads" href="{{asset('dist/img/fube.png')}}" type="image/png"> -->
  <link rel="stylesheet" href="{{ asset('css/style.css')}}">
  
  <script src="{{ asset('js/chart.js')}}"></script>
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome uploadss -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
@@ -35,17 +35,17 @@
     <div class="col">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link  link2 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('icon/pay2.png') }}"><br>pay</a>
+        <a class="nav-link  link2 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('uploads/pay2.png') }}"><br>pay</a>
       </li>
     </ul>
     </div>
     <div class="col">
-    <img class="logo" src="{{ asset('icon/logo.png') }}">
+    <img class="logo" src="{{ asset('uploads/logo.png') }}">
     </div>
     <div class="col">
       <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link  link3 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('icon/pay2.png') }}"><br>Receive</a>
+        <a class="nav-link  link3 text-center" data-widget="pushmenu" href="#"> <img class="pay" src="{{ asset('uploads/pay2.png') }}"><br>Receive</a>
       </li>
     </ul>
     </div>
@@ -73,11 +73,11 @@
       <!-- Sidebar Menu -->
     <!--  <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> -->
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+          <!-- Add uploadss to the links using the .nav-uploads class
+               with font-awesome or any other uploads font library -->
      <!--     <li class="nav-item">
                 <a href="{{ url('home') }}" class="nav-link active" style="background-color: #ff8c00;">
-                  <i class="fa fa-home nav-icon"></i>
+                  <i class="fa fa-home nav-uploads"></i>
                   <p>Home</p>
                 </a>
               </li>
@@ -93,7 +93,7 @@
                 <?php if($UserRole2->view == 'on'):?>
                  <li class="nav-item has-treeview ">
             <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-chart-line"></i>
+              <i class="nav-uploads fas fa-chart-line"></i>
               <p>
                 Reports
                 <i class="right fas fa-angle-left"></i>
@@ -102,7 +102,7 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{ url('sales_report') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
+                  <i class="fas fa-chart-bar nav-uploads"></i>
                   <p>Sales Report</p>
                 </a>
               </li>
@@ -118,7 +118,7 @@
                 <?php if($UserRole1->edit == 'on' || $UserRole1->view == 'on'):?>
                <li class="nav-item">
                 <a href="{{ url('user_access') }}" class="nav-link ">
-                  <i class="fa fa-key nav-icon"></i>
+                  <i class="fa fa-key nav-uploads"></i>
                   <p>User Access Control</p>
                 </a>
               </li>
@@ -127,7 +127,7 @@
 
                  <li class="nav-item">
                 <a href="{{ url('wallet') }}" class="nav-link ">
-                  <i class="fas fa-wallet nav-icon"></i>
+                  <i class="fas fa-wallet nav-uploads"></i>
                   <p>Wallet</p>
                 </a>
               </li>
@@ -135,14 +135,14 @@
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
-                  <i class="fa fa-user nav-icon"></i>
+                  <i class="fa fa-user nav-uploads"></i>
                   <p>Profile</p>
                 </a>
               </li>
           <li class="nav-item">
             <a href="{{ url('logout') }}" class="nav-link"  
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <i class="fa fa-power-off nav-icon"></i>
+              <i class="fa fa-power-off nav-uploads"></i>
               <p>
                {{ __('Logout') }}
               </p>
@@ -176,7 +176,7 @@
     </div>
     <div class="col">
      <div class=" user-img">
-          <img src="{{URL::asset('icon/profile.png')}}" class="img-circle  img-responsive" alt="User Image">
+          <img src="{{URL::asset('uploads/profile.png')}}" class="img-circle  img-responsive" alt="User Image">
         </div>
     </div>
   </div>
@@ -232,11 +232,11 @@
   <!-- Main Footer -->
   <footer class="main-footer me text-center" style="background:#F4B84A;">
   <div class="navbar me "  id="myNavbar">
-  <a class="link" href="#home"><img class="menu1" src="{{ asset('icon/Reward.png') }}"><br>Reward</a>
-  <a class="link" href="#news"><img class="menu1" src="{{ asset('icon/Message.png') }}"><br>Message</a>
-  <a class="link" href="#contact"><img class="menu1" src="{{ asset('icon/Wallet.png') }}"><br>Wallet</a>
-  <a class="link"href="#about"><img class="menu1" src="{{ asset('icon/History.png') }}"><br>History</a>
-   <a class="link" href="#about"><img class="menu1" src="{{ asset('icon/Account.png') }}"><br>Account</a>
+  <a class="link" href="#home"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
+  <a class="link" href="#news"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
+  <a class="link" href="#contact"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
+  <a class="link"href="#about"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
+   <a class="link" href="#about"><img class="menu1" src="{{ asset('uploads/Account.png') }}"><br>Account</a>
   
 </div>
   </footer>

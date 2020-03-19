@@ -13,7 +13,7 @@
   <div class="card-body bg-dark">
     <h6 class="card-header text-center text-bold" id="fube-header">Latest Orders</h6><br>
     <a href="#" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/order.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14</p>
+    <p class="card-text" style="font-size:2vw;"><img src="dist/uploads/png/order.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14</p>
     </a>
     
   </div>
@@ -25,7 +25,7 @@
   <div class="card-body bg-dark">
     <h6 class="card-header text-center text-bold" id="fube-header">Sales</h6><br>
     <a href="{{url('sales_report')}}" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/sale.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44</p>
+    <p class="card-text" style="font-size:2vw;"><img src="dist/uploads/png/sale.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44</p>
     </a>
    
   </div>
@@ -41,7 +41,7 @@
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Top 5 Products</h6><br>
     <a href="{{url('product_report')}}" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/pro1.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
+    <p class="card-text" style="font-size:2vw;"><img src="dist/uploads/png/pro1.png" width="78" height="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05</p>
     </a>
   </div>
 </div>
@@ -52,7 +52,7 @@
   <div class="card-body bg-dark">
   <h6 class="card-header text-center text-bold" id="fube-header">Stock</h6><br>
     <a href="#" >
-    <p class="card-text" style="font-size:2vw;"><img src="dist/icon/png/Stock.png" width="78" height="78">&nbsp;&nbsp;&nbsp;101</p>
+    <p class="card-text" style="font-size:2vw;"><img src="dist/uploads/png/Stock.png" width="78" height="78">&nbsp;&nbsp;&nbsp;101</p>
     </a>
    
   </div>
@@ -78,10 +78,10 @@
                 <!-- /.d-flex -->
 
             <div class="row service1 fcolor ">
-  <div class="col text-center fcolor"><a href="" class="btn btn-outline-warning service3" style="font-size: 11px; font-family: helvetica;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ asset('icon/car.png') }}"><br>iCar</a></div>
-  <div class="col  text-center"><a href="cars/" class="btn btn-outline-warning"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ asset('icon/rent.png') }}"><br>iRental</a></div>
-  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service img-responsive" src="{{ asset('icon/pay.png') }}"><br>iPayment</a></div>
-  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;w"><img class="service" src="{{ asset('icon/book.png') }}"><br>iBook</a></div>
+  <div class="col text-center fcolor"><a href="" class="btn btn-outline-warning service3" style="font-size: 11px; font-family: helvetica;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ url('uploads/car.png') }}"><br>iCar</a></div>
+  <div class="col  text-center"><a href="cars/" class="btn btn-outline-warning"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ url('uploads/rent.png') }}"><br>iRental</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service img-responsive" src="{{ url('uploads/pay.png') }}"><br>iPayment</a></div>
+  <div class="col text-center"><a href="" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;w"><img class="service" src="{{ url('uploads/book.png') }}"><br>iBook</a></div>
 </div>
               </div>
             </div>
@@ -91,9 +91,9 @@
           <br>
           <div class="row">
             <div class="col">
-          <img class="banner img-rounded img-responsive" src="{{ asset('icon/banner.jpg') }}">
+          <img class="banner img-rounded img-responsive" src="{{ url('uploads/banner.JPG') }}">
           <br><br>
-          <p class="text-white">Rewards<span class="follow">></span></p>
+          <p class="text-white">Rewards<span class="follow"></span></p>
 </div>
 </div>
           <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
@@ -113,7 +113,7 @@
 
       <div class="col">
         <div class="card">
-         <img class="img-responsive banner2" src="{{ asset('icon/caru.jpg') }}"
+         <img class="img-responsive banner2" src="{{ url('uploads/caru.JPG') }}"
             >
         </div>
       </div>
@@ -128,7 +128,7 @@
 
       <div class="col">
         <div class="card">
-          <img class="img-responsive banner2" src="{{ asset('icon/caru.jpg') }}"
+          <img class="img-responsive banner2" src="{{ url('uploads/caru.JPG') }}"
             alt="Card image cap">
         </div>
       </div>
@@ -151,7 +151,7 @@
   
           <p class="text-white">Promotion<span class="follow2">></span></p><br>
 
-  <img class="banner img-rounded" src="{{ asset('icon/tunai.png') }}">
+  <img class="banner img-rounded" src="{{ url('uploads/tunai.png') }}">
   <br><br>
 
 

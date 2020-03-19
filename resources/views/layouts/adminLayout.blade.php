@@ -100,6 +100,13 @@
                 </a>
               </li>
 
+              <li class="nav-item">
+                <a href="{{ url('wallet') }}" class="nav-link ">
+                  <i class="fas fa-wallet nav-icon"></i>
+                  <p>Wallet</p>
+                </a>
+              </li>
+
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
                   <i class="fa fa-user nav-icon"></i>

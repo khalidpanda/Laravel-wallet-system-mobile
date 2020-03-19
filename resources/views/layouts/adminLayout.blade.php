@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>JCLUB SYSTEM</title>
+  <title>ICommunity</title>
   
  <!-- <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png"> -->
  <link rel="stylesheet" href="{{ asset('css/app.css')}}">
@@ -28,62 +28,18 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #212529;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color: white;"></i></a>
       </li>
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
+   <center><img class="logo" src="{{ asset('uploads/logo.png') }}" style="width: 20%;"></center>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-     
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-            class="fas fa-th-large"></i></a>
-      </li> -->
-    </ul>
+    
   </nav>
   <!-- /.navbar -->
 
@@ -93,7 +49,7 @@
     <a href="{{ url('home') }}" class="brand-link">
      <!--  <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
            style="opacity: .8">&nbsp;&nbsp;   -->
-      <span class="brand-text font-weight-light">JCLUB SYSTEM</span>
+      <span class="brand-text font-weight-light">ICommunity</span>
     </a>
 
     <!-- Sidebar -->
@@ -137,52 +93,12 @@
               $UserRole5 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Tables') ->first(); 
               ?>
              
-
-                <?php if (!empty($UserRole1)):?>
-                <?php if($UserRole1->edit == 'on' || $UserRole1->view == 'on'):?>
-                <li class="nav-item">
-                <a href="{{ url('agents') }}" class="nav-link ">
-                  <i class="fa fa-user-tie nav-icon"></i>
-                  <p>Agents</p>
-                </a>
-              </li>
-               <?php endif;?>
-                <?php endif;?>
-
-
-                 <?php if (!empty($UserRole)):?>
-                <?php if($UserRole->edit == 'on' || $UserRole->view == 'on'):?>
               <li class="nav-item">
-                <a href="{{ url('players') }}" class="nav-link ">
-                  <i class="fa fa-users nav-icon"></i>
-                  <p>Players</p>
+                <a href="{{ url('cars') }}" class="nav-link ">
+                  <i class="fas fa-car nav-icon"></i>
+                  <p>Cars</p>
                 </a>
               </li>
-              <?php endif;?>
-                <?php endif;?>
-
-                 <?php if (!empty($UserRole4)):?>
-                <?php if($UserRole4->edit == 'on' || $UserRole4->view == 'on'):?>
-              <li class="nav-item">
-                <a href="{{ url('chips') }}" class="nav-link ">
-                  <i class="fa fa-coins nav-icon"></i>
-                  <p>Chips Management</p>
-                </a>
-              </li>
-              <?php endif;?>
-                <?php endif;?>
-
-
-                <?php if (!empty($UserRole5)):?>
-                <?php if($UserRole5->edit == 'on' || $UserRole5->view == 'on'):?>
-                <li class="nav-item">
-                <a href="{{ url('tables') }}" class="nav-link ">
-                  <i class="fa fa-globe nav-icon"></i>
-                  <p>Table</p>
-                </a>
-              </li>
-               <?php endif;?>
-                <?php endif;?>
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">
@@ -203,57 +119,7 @@
                <?php endif;?>
                 <?php endif;?>
               
-                 <?php if (!empty($UserRole3)):?>
-                <?php if($UserRole3->view == 'on'):?>
-                 <li class="nav-item has-treeview ">
-            <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-chart-line"></i>
-              <p>
-                Reports
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ url('reports/players') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Players Report</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="{{ url('reports/agents') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Agents Report</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="{{ url('reports/transaction') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Transaction History</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="{{ url('reports/result') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Player's Game History</p>
-                </a>
-              </li>
-
-
-              <li class="nav-item">
-                <a href="{{ url('reports/ip') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Players IP Login</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-           <?php endif;?>
-          <?php endif;?>
+                
 
               
 
@@ -286,12 +152,7 @@
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">@yield('title')</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">JCLUB</li>
-            </ol>
-          </div><!-- /.col -->
+          
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -318,7 +179,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2020 <a href="https://www.fube.com.my/" style="color: #ff8c00;">Fube Technology</a>.</strong>
+    <strong>Copyright &copy; 2020 <a href="https://www.fube.com.my/" style="color: #ff8c00;">ICommunity</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b style="color: #ff8c00;">Version 1.0</b> 

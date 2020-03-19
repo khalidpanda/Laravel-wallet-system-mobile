@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminLayout')
 @section('content')
 @section('title', 'User Right')
 <style type="text/css">

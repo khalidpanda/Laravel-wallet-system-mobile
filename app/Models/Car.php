@@ -19,16 +19,22 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $cars_logo
  * @property string $cars_picture
  * @property string $cars_price
- * @property string $cars_features
+ * @property string $cars_brand
+ * @property string $cars_model
+ * @property string $cars_body
+ * @property string $cars_fuel
+ * @property string $cars_transmission
  * @property string $cars_description
  * @property string $cars_rating
+ * @property string $cars_status
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
  * @package App\Models
  */
 class Car extends Model
-{
+{	
+	
 	protected $table = 'cars';
 	protected $primaryKey = 'cars_id';
 
@@ -39,8 +45,13 @@ class Car extends Model
 		'cars_logo',
 		'cars_picture',
 		'cars_price',
-		'cars_features',
+		'cars_brand',
+		'cars_model',
+		'cars_body',
+		'cars_fuel',
+		'cars_transmission',
 		'cars_description',
-		'cars_rating'
+		'cars_rating',
+		'cars_status'
 	];
 }

@@ -149,7 +149,7 @@
 <!--/.Carousel Wrapper-->
 
   
-          <p class="text-white">Promotion<span class="follow2">></span></p><br>
+          <p class="text-white">Promotion<span class="follow2"></span></p><br>
 
   <img class="banner img-rounded" src="{{ url('uploads/tunai.png') }}">
   <br><br>

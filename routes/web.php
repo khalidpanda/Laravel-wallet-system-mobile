@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 
+Route::get('/', function () {
+    return view('topup');
+});
+
 Auth::routes();
 
 
@@ -71,3 +75,11 @@ Route::get('/history', 'HistoryController@index');
 Route::get('/notification', 'NotificationController@index');
 
 
+//topup
+Route::get('/topup', 'TopupController@index');
+
+//payment
+Route::get('/payment', 'PaymentController@index');
+
+//i-book
+Route::get('/book', 'BookController@index');

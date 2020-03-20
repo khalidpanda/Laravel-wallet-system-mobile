@@ -27,7 +27,7 @@
 </head>
 <body class="layout-footer-fixed ">
   
-<div class="wrapper bg1 bg">
+<div class="wrapper bg1 bg no-gutters">
   <!-- Navbar -->
 <!--  <nav class="main-header navbar navbar-expand navbar-white navbar-light">-->
     <!-- Left navbar links -->
@@ -194,7 +194,7 @@
     </div>
      <div class="vl"></div>
     <div class="col">
-      <a href="#" class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">+ Top up</a>
+      <a href="topup/" class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">+ Top up</a>
     </div>
   </div>
    <hr class="new1">
@@ -234,7 +234,7 @@
   <div class="navbar me "  id="myNavbar">
   <a class="link" href="#home"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
   <a class="link" href="#news"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
-  <a class="link" href="#contact"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
+  <a class="link" href="wallet/"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
   <a class="link"href="#about"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
    <a class="link" href="#about"><img class="menu1" src="{{ asset('uploads/Account.png') }}"><br>Account</a>
   

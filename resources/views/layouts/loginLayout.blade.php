@@ -36,5 +36,21 @@
 <!-- AdminLTE App -->
 <script src="{{ asset('dist/js/adminlte.min.j')}}s"></script>
 
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("#btn50").click(function() {
+        $("#inputAmount").val('50.00');
+    });
+
+     $("#btn100").click(function() {
+        $("#inputAmount").val('100.00');
+    });
+
+      $("#btn200").click(function() {
+        $("#inputAmount").val('200.00');
+    });
+});
+</script>
+
 </body>
 </html>

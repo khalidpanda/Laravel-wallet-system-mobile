@@ -14,7 +14,15 @@
     </div>
 </div>
 <div class="col">
-        <h2 class="i-rent text-responsive">Which cars<br> do you want to choose?</h2>
+        <form action="#" method="#" role="search">
+    <div class="input-group" style="background-color: #161A27; width: 80%; margin-left: 10%;">
+    <input style="background-color: #161A27; width: 10%;  border: 2px solid #535866; border-radius: 30px;" class="form-control text-white" placeholder="Enter Location" name="srch-term" id="ed-srch-term" type="text">
+    <div class="input-group-btn">
+   <!-- <button type="submit" id="searchbtn">
+    search</button> -->
+    </div>
+    </div>
+    </form> 
    </div>
     </div>
 
@@ -98,9 +106,9 @@
      <p class="icar-des">2019 sport class</p>
      <P class="icar-price">RM 150,000.00</P>
   </div>
-          <div class="card-footer">
-            <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
-          </div>
+         <div class="card-footer">
+           <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+  </div>
 </div>
 
 <!--CAR 3 FINISH HERE -->

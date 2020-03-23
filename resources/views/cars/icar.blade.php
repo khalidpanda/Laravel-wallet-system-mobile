@@ -11,8 +11,8 @@
 <a href="{{ url('home') }}"><img class="back" src="{{url('/uploads/Back.png')}}"></a>
     </div>
      <div class="col ">
- <img class="logo" src="{{ asset('uploads/logo.png') }}" style="width: 40%; margin-left: -20%;">
- <img class="logo" src="{{ asset('uploads/Search.png') }}" style="width: 13%; margin-left: 50%;">
+ <img class="logo" src="{{ url('uploads/logo.png') }}" style="width: 40%; margin-left: -20%;">
+ <img class="logo" src="{{ url('uploads/Search.png') }}" style="width: 13%; margin-left: 50%;">
     </div> 
 
 
@@ -60,7 +60,7 @@
 	<div class="card-body icar-box">
 		
 		<img class="icar-img" src="{{ url('uploads/volks.png') }}">
-    <a href=""><img class="icar-logo" src="{{ url('uploads/VW.png') }}"></a>
+    <a href=""><img class="icar-logo" src="{{ url('uploads/vw.png') }}"></a>
     <div class="col icar-rating">
     <p class="icar-star"><img class="star-img" src="{{ url('uploads/star.png') }}"> 4.5</p>
      <p class="text-white icar-text" >Volkswagon Tiguan</p>

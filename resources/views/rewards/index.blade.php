@@ -184,14 +184,14 @@ img.hover-shadow {
 
 <div class="row">
   <div class="column">
-    <img src="{{ asset('uploads/re1.jpg') }}" class="img-rounded" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="{{ asset('uploads/Reward1.jpg') }}" class="img-rounded" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     <p class="text-white" style="font-size: 3vw; margin-top: 7%;">Get RM10 of any I-RENTAL car</p>
-    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
+    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/Crown.png') }}">&nbsp;100 points</p>
   </div>
   <div class="column">
-    <img src="{{ asset('uploads/re2.jpg') }}"  class="img-rounded" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="{{ asset('uploads/Reward2.jpg') }}"  class="img-rounded" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       <p class="text-white" style="font-size: 3vw; margin-top: 7%;">Get RM10 of any I-RENTAL car</p>
-    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
+    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/Crown.png') }}">&nbsp;100 points</p>
   </div>
   <!--<div class="column">
     <img src="{{ asset('uploads/re1.jpg') }}"  class="img-rounded" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
@@ -205,22 +205,22 @@ img.hover-shadow {
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="{{ asset('uploads/re1.jpg') }}" style="width:100%">
+      <img src="{{ asset('uploads/Reward1.jpg') }}" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="{{ asset('uploads/re2.jpg') }}" style="width:100%">
+      <img src="{{ asset('uploads/Reward2.jpg') }}" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="{{ asset('uploads/re1.jpg') }}" style="width:100%">
+      <img src="{{ asset('uploads/Reward1.jpg') }}" style="width:100%">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="{{ asset('uploads/re2.jpg') }}" style="width:100%">
+      <img src="{{ asset('uploads/Reward2.jpg') }}" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -232,16 +232,16 @@ img.hover-shadow {
 
 
     <div class="column" style="background-color: #161A27;">
-      <img class="demo cursor" src="{{ asset('uploads/re1.jpg') }}" style="width:100%" onclick="currentSlide(1)" alt="Get RM 10 any I-RENTAL car">
+      <img class="demo cursor" src="{{ asset('uploads/Reward1.jpg') }}" style="width:100%" onclick="currentSlide(1)" alt="Get RM 10 any I-RENTAL car">
     </div>
     <div class="column">
-      <img class="demo cursor" src="{{ asset('uploads/re2.jpg') }}" style="width:100%" onclick="currentSlide(2)" alt="Get RM 10 any I-RENTAL car">
+      <img class="demo cursor" src="{{ asset('uploads/Reward2.jpg') }}" style="width:100%" onclick="currentSlide(2)" alt="Get RM 10 any I-RENTAL car">
     </div>
     <div class="column">
-      <img class="demo cursor" src="{{ asset('uploads/re1.jpg') }}" style="width:100%" onclick="currentSlide(3)" alt="Get RM 10 any I-RENTAL car">
+      <img class="demo cursor" src="{{ asset('uploads/Reward1.jpg') }}" style="width:100%" onclick="currentSlide(3)" alt="Get RM 10 any I-RENTAL car">
     </div>
     <div class="column">
-      <img class="demo cursor" src="{{ asset('uploads/re2.jpg') }}" style="width:100%" onclick="currentSlide(4)" alt="Get RM 10 any I-RENTAL car">
+      <img class="demo cursor" src="{{ asset('uploads/Reward2.jpg') }}" style="width:100%" onclick="currentSlide(4)" alt="Get RM 10 any I-RENTAL car">
     </div>
   </div>
 </div>
@@ -251,24 +251,24 @@ img.hover-shadow {
 <p style="text-align:left; margin-left: 5%; font-size: 5vw;" class="text-white">I-RENTAL</p>
 <div class="row">
 	<div class="col">
-    <img style="margin-left: 10%;" class="img-rounded img-responsive" src="{{ asset('uploads/ra1.jpg') }}">
+    <img style="margin-left: 10%;" class="img-rounded img-responsive" src="{{ asset('uploads/Reward3.jpg') }}">
 
 		
 	</div>
 	<div class="col">
     <p class="text-white" style="margin-top: 10%;">RM 5 off I-RENTAL</p>
-		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
+		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/Crown.png') }}">&nbsp;100 points</p>
 	</div>
 	<div class="w-100"></div>
 	<br>
 	<div class="col">
-    <img style="margin-left: 10%;" class="img-rounded img-responsive" src="{{ asset('uploads/ra1.jpg') }}">
+    <img style="margin-left: 10%;" class="img-rounded img-responsive" src="{{ asset('uploads/Reward3.jpg') }}">
 
 		
 	</div>
 	<div class="col">
     <p class="text-white" style="margin-top: 10%;">RM 5 off I-RENTAL</p>
-		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
+		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/Crown.png') }}">&nbsp;100 points</p>
 	</div>
 </div>
 <br><br>

@@ -220,7 +220,7 @@ img.hover-shadow {
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="{{ asset('uploads/Reward2.jpg') }}" style="width:100%">
+      <img src="{{ asset('uploads/Reward2.JPG') }}" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

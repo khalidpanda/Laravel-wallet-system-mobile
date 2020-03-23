@@ -195,4 +195,15 @@ class CarsController extends Controller
       toastr()->success('Car has been deleted successfully!');
       return redirect('/cars'); 
 }
+
+
+  public function icar()
+{
+   return view('cars.icar');
+}
+
+
+
+
+
 }

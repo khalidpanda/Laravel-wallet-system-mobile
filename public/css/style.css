@@ -360,3 +360,142 @@ border-radius: 30px;
      border: 4px solid white;
      color: white;
 }
+
+
+/*CSS3 STROKE EFFECT*/
+#mainNav ul {
+  list-style: inline;
+  margin:0;
+  margin-left: -2%;
+}
+#mainNav ul li {
+  display: inline-block;
+    display:inline;
+    
+}
+#mainNav ul li a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color:white;
+  font-size: 4vw;
+}
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+  transition: all .5s;
+}
+#mainNav ul li a:hover {
+  color:#F4B84A;
+}
+
+/* stroke */
+#mainNav.stroke ul li a
+{
+  position: relative;
+}
+#mainNav.stroke ul li a:after,
+#mainNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #F4B84A;
+  height: 1px;
+}
+#mainNav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#mainNav ul li a {
+  transition: all 1s;
+}
+
+#mainNav ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+#mainNav ul li a:hover {
+  color: #F4B84A;
+  z-index: 1;
+}
+#mainNav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+}
+
+.icar-box {
+
+    background-color: #1E212C;
+    border: none;
+    border-radius: 30px;
+    
+    width: 80%;
+    margin-left: 20%;
+}
+
+.icar-img {
+
+    margin-left: -35%;
+}
+
+.icar-logo {
+
+    margin-top: -20%;
+    margin-left: 8%;
+}
+
+.icar-star {
+     background-color: #707070;
+    border: none;
+    border-radius: 30px;
+    color: #F4B84A;
+    width: 28%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.star-img {
+    margin-top: -8%;
+}
+
+.icar-rating {
+    margin-left: 55%;
+    margin-top: -30%;
+}
+
+.icar-text {
+
+margin-left: -20%;
+font-size: 4vw;
+}
+
+.icar-des {
+
+    color: #535866;
+    font-size: 3vw;
+    margin-left: -20%;
+    margin-top: -9%;
+}
+.icar-price {
+    color: #F4B84A;
+     margin-left: -20%;
+ margin-top: -7%;
+}
+
+.icar-btn {
+      background: rgb(236,144,56);
+background: linear-gradient(90deg, rgba(236,144,56,1) 45%, rgba(244,193,95,1) 88%, rgba(244,193,95,1) 100%);
+width: 100%;
+border: none;
+border-radius: 20px;
+color: white;
+}
+
+

@@ -7,7 +7,7 @@
 
 <div class="row no-gutters">
     <div class="col">
-<a href="#"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
+<a href="{{url('home')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
     </div>
      <div class="col ">
 <a class="tetx-white " href="{{route('home')}}"><img style="margin-left: -38%; margin-top: 4%; width: 65%;" class="logo" src="{{ asset('uploads/logo.png') }}"></a>

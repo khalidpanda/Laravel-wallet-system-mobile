@@ -118,29 +118,7 @@ body {
                     @endauth
                 </div>
             @endif
-<!-- for later use -->
-          <!--  <div class="content">
-            <h1 class="title m-b-md text-bold" id="fube-text-color">Welcome To</h1>
-                <div class="title m-b-md" >
-                    Fube Pos System
-                </div> -->
 
-                <div id="fly-in">  
-<div style="color: white; font-size: 6vw;"><span></span>welcome To</div><br>
-<div style=" font-size: 8vw; font-family: 'Montserrat', sans-serif;">icommunity</div><br>
-<!-- if need credits -->
-<!--<div>By</div><br>
-<div><span></span>Fube Technology .</div> -->
-
-</div>
-<!-- these are laravel default welcome page links-->
-           <!--     <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>  -->
             </div>
         </div>
     </body>

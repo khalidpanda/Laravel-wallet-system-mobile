@@ -78,7 +78,7 @@
                 <!-- /.d-flex -->
 
             <div class="row service1 fcolor ">
-  <div class="col text-center fcolor"><a href="" class="btn btn-outline-warning service3" style="font-size: 11px; font-family: helvetica;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ url('uploads/car.png') }}"><br>iCar</a></div>
+  <div class="col text-center fcolor"><a href="{{url('icar')}}" class="btn btn-outline-warning service3" style="font-size: 11px; font-family: helvetica;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ url('uploads/car.png') }}"><br>iCar</a></div>
   <div class="col  text-center"><a href="cars/" class="btn btn-outline-warning"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service" src="{{ url('uploads/rent.png') }}"><br>iRental</a></div>
   <div class="col text-center"><a href="payment/" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;"><img class="service img-responsive" src="{{ url('uploads/pay.png') }}"><br>iPayment</a></div>
   <div class="col text-center"><a href="book/" class="btn btn-outline-warning service3"style="font-size: 11px;  color: #F4B84A; background-color: #1E212C;w"><img class="service" src="{{ url('uploads/book.png') }}"><br>iBook</a></div>

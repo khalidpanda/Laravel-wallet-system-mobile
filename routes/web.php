@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 
-Route::get('/', function () {
-    return view('topup');
-});
 
 Auth::routes();
 
@@ -83,3 +80,8 @@ Route::get('/payment', 'PaymentController@index');
 
 //i-book
 Route::get('/book', 'BookController@index');
+
+//icar 
+
+Route::get('/icar', 'CarsController@icar');
+

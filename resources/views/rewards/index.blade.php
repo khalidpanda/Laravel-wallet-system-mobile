@@ -186,12 +186,12 @@ img.hover-shadow {
   <div class="column">
     <img src="{{ asset('uploads/Reward1.JPG') }}" class="img-rounded" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     <p class="text-white" style="font-size: 3vw; margin-top: 7%;">Get RM10 of any I-RENTAL car</p>
-    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.PNG') }}">&nbsp;100 points</p>
+    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
   </div>
   <div class="column">
     <img src="{{ asset('uploads/Reward2.JPG') }}"  class="img-rounded" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       <p class="text-white" style="font-size: 3vw; margin-top: 7%;">Get RM10 of any I-RENTAL car</p>
-    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.PNG') }}">&nbsp;100 points</p>
+    <p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
   </div>
   <!--<div class="column">
     <img src="{{ asset('uploads/re1.jpg') }}"  class="img-rounded" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
@@ -257,7 +257,7 @@ img.hover-shadow {
 	</div>
 	<div class="col">
     <p class="text-white" style="margin-top: 10%;">RM 5 off I-RENTAL</p>
-		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.PNG') }}">&nbsp;100 points</p>
+		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
 	</div>
 	<div class="w-100"></div>
 	<br>
@@ -268,7 +268,7 @@ img.hover-shadow {
 	</div>
 	<div class="col">
     <p class="text-white" style="margin-top: 10%;">RM 5 off I-RENTAL</p>
-		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.PNG') }}">&nbsp;100 points</p>
+		<p style="color: #6A6A76; margin-top: -10%; font-size: 3vw;"><img style="margin-top: -5%;" src="{{ asset('uploads/crown.png') }}">&nbsp;100 points</p>
 	</div>
 </div>
 <br><br>

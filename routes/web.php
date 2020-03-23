@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 
+<<<<<<< HEAD
+=======
+// Route::get('/', function () {
+//     return view('topup');
+// });
+>>>>>>> 399312baf0abbe2c643e5e122730975f7e87891e
 
 Auth::routes();
 

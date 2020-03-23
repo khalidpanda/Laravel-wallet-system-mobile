@@ -186,11 +186,11 @@
       <hr class="new1">
       <div class="row top text-center">
     <div class="col">
-      <p>Credits :<br>10.00</p>
+      <p>Credits :<br>{{number_format(Auth::user()->wallet,2)}}</p>
     </div>
     <div class="vl"></div>
     <div class="col">
-      <p>Rewards :<br>10</p>
+      <p>Rewards :<br>{{number_format(Auth::user()->points,2)}}</p>
     </div>
      <div class="vl"></div>
     <div class="col">

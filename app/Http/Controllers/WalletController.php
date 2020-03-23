@@ -85,8 +85,13 @@ class WalletController extends Controller
       ]);
        $trans->save();
 
-          toastr()->success('Topup Success!');
+       if (Auth::user()->role == 'Admin') {
+           toastr()->success('Topup Success!');
       return redirect('/wallet');
+       }else{
+        return redirect('/home');
+       }
+         
     }
   
     /**
@@ -131,9 +136,9 @@ class WalletController extends Controller
      * @return \Illuminate\Http\Response
      */
    public function update(Request $request)
-{     
-      
-}
+       {
+        
+       }
   
     /**
      * Remove the specified resource from storage.

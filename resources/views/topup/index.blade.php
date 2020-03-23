@@ -27,19 +27,20 @@
     <div class="row">
 
          <div class="col">
-              <form >
+              <form method="post" action="{{action('WalletController@topup')}}">
+         @csrf
                   <div class="form-group">
        <p style="margin-left: 11%; color: #FAFBFE;">Enter your preferred amount</p> 
   <div class="md-input">
   
-   <input  class="md-form-control bg  text-white"   required="" type="text" name="email">
+   <input id="inputAmount"  class="md-form-control bg  text-white"   required type="text" name="amount">
    <p style="color: #6A6A76; font-size: 3vw;">Minimum topup amount is RM 10</p>
     <div class="col" style=" margin: 7%;">                              
-    <a href="topup/" class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 50</a>	
-        <a href="topup/" class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 100</a>	
-            <a href="topup/" class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 200</a>
+    <a id="btn50"   class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 50</a>	
+        <a id="btn100"  class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 100</a>	
+            <a id="btn200"  class="btn btn-outline text-white top-btn" style="border:1px solid #f8ad3a; border-radius: 25px;">RM 200</a>
         </div>
-      <label for="email" style="color: #6A6A76;">RM</label>
+      <label for="amount" style="color: #6A6A76;">RM</label>
          </div>
 
      
@@ -67,6 +68,8 @@
     <div class="gap5x"></div>
 
 </div>
+
+
 
 
 

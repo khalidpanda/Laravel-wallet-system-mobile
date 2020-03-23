@@ -29,24 +29,24 @@
     <div class="container no-gutters">
   <div class="row no-gutters">
     <div class="col i-box">
-    <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Sedan.png')}}"><br>Sedan</a>
+    <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Sedan.png')}}"><br>Sedan</a>
     </div>
     <div class="col i-box">
-    	 <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Hatchback.png')}}"><br>Hacthback</a>
+    	 <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Hatchback.png')}}"><br>Hacthback</a>
     </div>
     <div class="w-100"></div>
     <div class="col i-box">
-    	 <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Sprotcar.png')}}"><br>Sportscar</a>
+    	 <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Sprotcar.png')}}"><br>Sportscar</a>
     </div>
     <div class="col i-box">
-    	 <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Suv.png')}}"><br>Suv</a>
+    	 <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Suv.png')}}"><br>Suv</a>
     </div>
      <div class="w-100"></div>
     <div class="col i-box">
-    	 <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/MPV.png')}}"><br>MPV</a>
+    	 <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/MPV.png')}}"><br>MPV</a>
     </div>
     <div class="col i-box">
-    	 <a href="" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Van.png')}}"><br>Van</a>
+    	 <a href="{{url('irental')}}" class="btn btn-outline text-white"><img class="i-rent2" src="{{URL::asset('uploads/Van.png')}}"><br>Van</a>
     </div>
   </div>
 </div>

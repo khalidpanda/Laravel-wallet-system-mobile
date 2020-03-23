@@ -81,4 +81,10 @@ class TopupController extends Controller
     {
         //
     }
+
+
+      public function ipayment()
+    {
+        return view('payment.index');
+    }
 }

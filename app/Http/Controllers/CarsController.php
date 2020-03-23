@@ -202,6 +202,10 @@ class CarsController extends Controller
    return view('cars.icar');
 }
 
+ public function irental()
+{
+   return view('cars.irental');
+}
 
 
 

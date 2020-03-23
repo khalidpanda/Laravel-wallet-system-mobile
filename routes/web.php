@@ -15,12 +15,7 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 
-<<<<<<< HEAD
-=======
-// Route::get('/', function () {
-//     return view('topup');
-// });
->>>>>>> 399312baf0abbe2c643e5e122730975f7e87891e
+
 
 Auth::routes();
 
@@ -82,7 +77,7 @@ Route::get('/notification', 'NotificationController@index');
 Route::get('/topup', 'TopupController@index');
 
 //payment
-Route::get('/payment', 'PaymentController@index');
+Route::get('/payment', 'TopupController@ipayment');
 
 //i-book
 Route::get('/book', 'BookController@index');
@@ -90,4 +85,7 @@ Route::get('/book', 'BookController@index');
 //icar 
 
 Route::get('/icar', 'CarsController@icar');
+
+//irental
+Route::get('/irental', 'CarsController@irental');
 

@@ -499,3 +499,18 @@ color: white;
 }
 
 
+.irent-now {
+    width: 80%;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-top: -10%;
+}
+
+.new1 {
+    background-color: #414148;
+}
+
+.new2 {
+    background-color: #F4B84A;
+}

@@ -16,6 +16,7 @@
 <div class="col">
         <form action="#" method="#" role="search">
     <div class="input-group" style="background-color: #161A27; width: 80%; margin-left: 10%;">
+         <span class="fa fa-search form-control-feedback"></span>
     <input style="background-color: #161A27; width: 10%;  border: 2px solid #535866; border-radius: 30px;" class="form-control text-white" placeholder="Enter Location" name="srch-term" id="ed-srch-term" type="text">
     <div class="input-group-btn">
    <!-- <button type="submit" id="searchbtn">
@@ -73,7 +74,7 @@
     <P class="icar-price">RM 150,000.00</P>
   </div>
         <div class="card-footer">
-          <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+          <a href="{{url('irentnow')}}" class="btn btn icar-btn text-white">RENT NOW</a> 
         </div>
 </div>
 
@@ -90,7 +91,7 @@
      <P class="icar-price">RM 250,000.00</P>
   </div>
     <div class="card-footer">
-       <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+       <a href="{{url('irentnow')}}" class="btn btn icar-btn text-white">RENT NOW</a> 
     </div>
 </div>
 
@@ -107,7 +108,7 @@
      <P class="icar-price">RM 150,000.00</P>
   </div>
          <div class="card-footer">
-           <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+           <a href="{{url('irentnow')}}" class="btn btn icar-btn text-white">RENT NOW</a> 
   </div>
 </div>
 

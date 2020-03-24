@@ -88,3 +88,5 @@ Route::get('/icar', 'CarsController@icar');
 //irental
 Route::get('/irental', 'CarsController@irental');
 
+//irentnow
+Route::get('/irentnow', 'CarsController@irentalNow');

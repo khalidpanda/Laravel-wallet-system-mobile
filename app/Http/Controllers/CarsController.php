@@ -196,18 +196,23 @@ class CarsController extends Controller
       return redirect('/cars'); 
 }
 
-
+//icar section
   public function icar()
 {
    return view('cars.icar');
 }
 
+//irental section
  public function irental()
 {
    return view('cars.irental');
 }
 
+ public function irentalNow(){
 
+return view('cars.irentnow');
+
+}
 
 
 }

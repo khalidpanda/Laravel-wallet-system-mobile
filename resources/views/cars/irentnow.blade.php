@@ -17,9 +17,9 @@
 <div class="col">
         <div class="container my-4 irent-now">
 
-    <!--Carousel Wrapper-->
+    <!--Carousel body strats here-->
     <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails irent-now" data-ride="carousel">
-      <!--Slides-->
+      <!--Slide 1-->
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('uploads/Rent1.png')}}" alt="First slide">
@@ -31,8 +31,8 @@
           <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('uploads/Rent3.png')}}" alt="Third slide">
         </div>
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
+      <!--/.Slide 1-->
+      <!--Control start here-->
       <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -41,7 +41,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <!--/.Controls-->
+      <!--/.Control finish here-->
       <ol class="carousel-indicators">
         <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100 " src="{{URL::asset('uploads/Rent1.png')}}"
             class="img-fluid"></li>
@@ -51,7 +51,7 @@
             class="img-fluid"></li>
       </ol>
     </div>
-    <!--/.Carousel Wrapper-->
+    <!--/.Carousel body fiish here-->
 
   </div> 
    </div>
@@ -93,7 +93,7 @@
        <div class="input-group">
         <div class="input-group-addon">
         </div>
-        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control text-white" id="date" name="date" placeholder="23 Mar 2019 , Monday" type="text"/>
+        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control text-white" id="date" name="date" placeholder=", Monday" type="datetime-local"/>
       </div>
      </div>
     
@@ -113,7 +113,7 @@
        <div class="input-group">
         <div class="input-group-addon">
         </div>
-        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date" placeholder="10:00 AM" type="text"/>
+        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control text-white" id="date" name="date" placeholder="10:00 AM" type="time"/>
       </div>
      </div>
     
@@ -132,7 +132,7 @@
        <div class="input-group">
         <div class="input-group-addon">
         </div>
-        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date" placeholder="25 Mar 2019 , Monday" type="text"/>
+        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control text-white" id="date" name="date" placeholder="25 Mar 2019 , Monday" type="datetime-local"/>
       </div>
      </div>
     
@@ -152,7 +152,7 @@
        <div class="input-group">
         <div class="input-group-addon">
         </div>
-        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date" placeholder="Something here" type="text"/>
+        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date" placeholder="Remark" type="text"/>
       </div>
      </div>
     

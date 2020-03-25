@@ -81,4 +81,17 @@ class HistoryController extends Controller
 {
      
 }
+
+//for menu history 
+
+ public function Mhistory()
+    {
+        
+  
+        return view('history.history');
+    }
+
+
+
+
 }

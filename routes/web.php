@@ -90,3 +90,6 @@ Route::get('/irental', 'CarsController@irental');
 
 //irentnow
 Route::get('/irentnow', 'CarsController@irentalNow');
+
+//menu history
+Route::get('/history', 'HistoryController@Mhistory');

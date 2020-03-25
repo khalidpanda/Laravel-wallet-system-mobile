@@ -14,10 +14,10 @@
     </div>
 </div>
 <div class="col">
-        <form action="#" method="#" role="search">
-    <div class="input-group" style="background-color: #161A27; width: 80%; margin-left: 10%;">
-         <span class="fa fa-search form-control-feedback"></span>
-    <input style="background-color: #161A27; width: 10%;  border: 2px solid #535866; border-radius: 30px;" class="form-control text-white" placeholder="Enter Location" name="srch-term" id="ed-srch-term" type="text">
+        <form action="#" method="#" >
+    <div class="input-group" style=" width: 80%; margin-left: 10%;">
+         
+    <input style="background-color: #161A27; width: 10%;  border: 2px solid #535866; border-radius: 30px; overflow: hidden;" class="form-control text-white" placeholder="Enter Location" name="srch-term" id="ed-srch-term" type="text">
     <div class="input-group-btn">
    <!-- <button type="submit" id="searchbtn">
     search</button> -->

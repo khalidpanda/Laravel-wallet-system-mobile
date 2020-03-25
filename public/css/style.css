@@ -508,9 +508,39 @@ color: white;
 }
 
 .new1 {
-    background-color: #414148;
+    background-color: #6A6A76;
 }
 
 .new2 {
     background-color: #F4B84A;
+}
+
+
+.h-btn:active {
+
+    background-color: #F4B84A;
+    
+}
+
+.h-box {
+    background-color:#1E212C;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+}
+
+.h-carlogo {
+    margin-top: -10%;
+}
+
+.h-text {
+
+    margin-left: 36%;
+    margin-top: -10%;
+    font-size: 3vw;
+}
+
+.h-text2 {
+    margin-left: 70%;
+    margin-top: -12%;
 }

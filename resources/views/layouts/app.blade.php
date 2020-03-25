@@ -235,7 +235,7 @@
   <a class="link" href="rewards/"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
   <a class="link" href="#news"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
   <a class="link" href="wallet/"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
-  <a class="link"href="#about"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
+  <a class="link"href="{{url('history.history')}}"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
    <a class="link" href="{{url('profile')}}"><img class="menu1" src="{{ asset('uploads/Account.png') }}"><br>Account</a>
   
 </div>

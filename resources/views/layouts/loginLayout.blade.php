@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fube Pos</title>
-        <link rel="shortcut icon" href="{{asset('dist/img/fube.png')}}" type="image/png">
+  <title>iCommunity E-wallet</title>
+        <link rel="shortcut icon" href="{{asset('uploads/logo.png')}}" type="image/png">
         <link rel="stylesheet" href="{{ asset('css/style.css')}}">
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">

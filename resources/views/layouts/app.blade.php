@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>E-Wallet System</title>
+  <title>iCommunity E-wallet</title>
+   <link rel="shortcut icon" href="{{asset('uploads/logo.png')}}" type="image/png">
   
  <!-- <link rel="shortcut uploads" href="{{asset('dist/img/fube.png')}}" type="image/png"> -->
  <link rel="stylesheet" href="{{ asset('css/style.css')}}">

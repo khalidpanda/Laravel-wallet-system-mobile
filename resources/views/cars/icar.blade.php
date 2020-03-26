@@ -70,7 +70,7 @@
   
 
 		<div class="card-footer">
-   <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+   <a href="{{url('icarbook')}}" class="btn btn icar-btn text-white">BUY NOW</a> 
   </div>
 </div>
 
@@ -90,7 +90,7 @@
   
 
     <div class="card-footer">
-   <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+   <a href="{{url('icarbook')}}" class="btn btn icar-btn text-white">BUY NOW</a> 
   </div>
 </div>
 
@@ -110,7 +110,7 @@
   
 
     <div class="card-footer">
-   <a href="" class="btn btn icar-btn text-white">BUY NOW</a> 
+   <a href="{{url('icarbook')}}" class="btn btn icar-btn text-white">BUY NOW</a> 
   </div>
 </div>
 

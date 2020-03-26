@@ -81,7 +81,7 @@ Route::get('/payment', 'TopupController@ipayment');
 //i-book
 Route::get('/book', 'BookController@index');
 
-//icar 
+//icar 1st step
 
 Route::get('/icar', 'CarsController@icar');
 
@@ -91,5 +91,9 @@ Route::get('/irental', 'CarsController@irental');
 //irentnow
 Route::get('/irentnow', 'CarsController@irentalNow');
 
-//menu history
+//menu history section
 Route::get('/history', 'HistoryController@Mhistory');
+
+//icar book 2nd step
+Route::get('/icarbook', 'CarsController@icarbook');
+

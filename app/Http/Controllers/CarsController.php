@@ -196,7 +196,7 @@ class CarsController extends Controller
       return redirect('/cars'); 
 }
 
-//icar section
+//icar section 1st step
   public function icar()
 {
    return view('cars.icar');
@@ -208,9 +208,18 @@ class CarsController extends Controller
    return view('cars.irental');
 }
 
+//for irental next step
  public function irentalNow(){
 
 return view('cars.irentnow');
+
+}
+
+//for icar book 2nd step
+
+ public function icarbook(){
+
+return view('cars.icarbook');
 
 }
 

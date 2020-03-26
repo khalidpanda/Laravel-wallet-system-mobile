@@ -36,7 +36,7 @@
                             <div class="md-input">
 
                           
-                                <input id="name" type="text" class="md-form-control bg bgform-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="name" type="text" class="md-form-control bg bgform-control{{ $errors->has('name') ? ' is-invalid' : '' }} text-white" name="name" value="{{ old('name') }}" required autofocus>
                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
                             </div>
 
@@ -50,7 +50,7 @@
 
                         <div class="form-group">
 <div class="md-input">
-  <input id="email" type="email" class="md-form-control bg bgform-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+  <input id="email" type="email" class="md-form-control bg bgform-control{{ $errors->has('email') ? ' is-invalid' : '' }} text-white" name="email" value="{{ old('email') }}" required>
                                  <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                              </div>
@@ -66,7 +66,7 @@
                         <div class="form-group">
                             <div class="md-input">
                       
-                                <input id="password" type="password" class="md-form-control bg bgform-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                <input id="password" type="password" class="md-form-control bg bgform-control{{ $errors->has('password') ? ' is-invalid' : '' }} text-white" name="password" required>
 
                                 <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -83,7 +83,7 @@
                         <div class="form-group">
                             <div class="md-input">
                            
-                                <input id="password-confirm" type="password" class="md-form-control bg bgform-control" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="md-form-control bg bgform-control text-white" name="password_confirmation" required>
 
                                  <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 

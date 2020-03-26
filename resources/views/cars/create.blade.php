@@ -25,9 +25,17 @@
               <input type="text" class="form-control" name="name"/>
           </div>
          
-           <div class="form-group">
-              <label for="price">Class :</label>
-              <input type="text" class="form-control" name="class"/>
+            <div class="form-group">
+              <label for="quantity">Class:</label>
+              <select class="form-control select2" name="class" style="width: 100%;">
+                    <option >Please Select Class</option>
+                    <option value="Cars">Cars</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Van">Van</option>
+      
+                  </select>
           </div>
 
            <div class="form-group">
@@ -56,7 +64,7 @@
                     <option >Please Select Brand</option>
                     <option value="BMW">BMW</option>
                     <option value="Mercedes">Mercedes</option>
-      
+                    <option value="Volkswagen">Volkswagen</option>
                   </select>
           </div>
 

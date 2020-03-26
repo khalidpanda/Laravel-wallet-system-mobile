@@ -27,8 +27,45 @@
           </div>
          
            <div class="form-group">
-              <label for="price">Class :</label>
-              <input type="text" class="form-control" name="class" value="{{$Car->cars_class}}" />
+              <label for="quantity">Class:</label>
+              <select class="form-control select2" name="class" style="width: 100%;">
+                    <option >Please Select Class</option>
+                    @if ($Car->cars_class =="Cars")
+                     <option selected value="Cars">Cars</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Van">Van</option>
+
+                    @elseif ($Car->cars_class =="Sedan")
+                      <option value="Cars">Cars</option>
+                    <option selected value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Van">Van</option>
+
+                      @elseif ($Car->cars_class =="SUV")
+                    <option value="Cars">Cars</option>
+                    <option value="Sedan">Sedan</option>
+                    <option selected value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Van">Van</option>
+
+                     @elseif ($Car->cars_class =="Hatchback")
+                    <option value="Cars">Cars</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option selected value="Hatchback">Hatchback</option>
+                    <option value="Van">Van</option>
+
+                     @elseif ($Car->cars_class =="Van")
+                    <option value="Cars">Cars</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option selected value="Van">Van</option>
+                    @endif
+                  </select>
           </div>
 
            <div class="form-group">
@@ -53,16 +90,25 @@
               <input type="text" class="form-control" name="price" value="{{$Car->cars_price}}" />
           </div>
 
-        
-
           <div class="form-group">
               <label for="quantity">Brand:</label>
-              <input type="text" class="form-control"  value="{{$Car->cars_brand}}" readonly />
               <select class="form-control select2" name="brand" style="width: 100%;">
                     <option >Please Select Brand</option>
-                    <option value="BMW">BMW</option>
+                    @if ($Car->cars_brand =="BMW")
+                    <option selected value="BMW">BMW</option>
                     <option value="Mercedes">Mercedes</option>
-      
+                    <option value="Volkswagen">Volkswagen</option>
+
+                    @elseif ($Car->cars_brand =="Mercedes")
+                     <option  value="BMW">BMW</option>
+                    <option selected value="Mercedes">Mercedes</option>
+                    <option value="Volkswagen">Volkswagen</option>
+
+                      @elseif ($Car->cars_brand =="Volkswagen")
+                    <option  value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option selected value="Volkswagen">Volkswagen</option>
+                    @endif
                   </select>
           </div>
 

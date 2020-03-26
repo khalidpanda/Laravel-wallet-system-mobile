@@ -17,9 +17,16 @@ class WalletController extends Controller
      */
     public function index()
     {
+        if ( Auth::user()->role == 'Admin') {
+       $User = User::where('id', Auth::user()->id)->first();
+        return view('wallet.adminIndex',compact('User'));
+
+        }else{
+
         $User = User::where('id', Auth::user()->id)->first();
-  
         return view('wallet.index',compact('User'));
+    }
+    
     }
    
     /**

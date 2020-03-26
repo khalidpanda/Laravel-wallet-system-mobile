@@ -65,7 +65,7 @@ class UserAccessController extends Controller
        $User->save();
 
        $UserRole = new UserRole([
-        'modules' =>'Product Management',
+        'modules' =>'Cars',
         'user_id'=> $User->id,
       ]);
        $UserRole->save();
@@ -81,6 +81,18 @@ class UserAccessController extends Controller
         'user_id'=> $User->id,
       ]);
        $UserRole2->save();
+
+        $UserRole3 = new UserRole([
+        'modules' =>'Rewards',
+        'user_id'=> $User->id,
+      ]);
+       $UserRole3->save();
+
+        $UserRole4 = new UserRole([
+        'modules' =>'Wallet',
+        'user_id'=> $User->id,
+      ]);
+       $UserRole4->save();
 
       toastr()->success('User has been added successfully!');
       return redirect('/user_access');
@@ -155,25 +167,29 @@ class UserAccessController extends Controller
      public function right($id)
     {
         $User = User::find($id);
-        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management') ->first();
-        $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC') ->first();
-        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report') ->first();
+        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Cars')->first();
+        $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC')->first();
+        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report')->first();
+        $UserRole3 = UserRole::where('user_id', $id)->where('modules', 'Rewards')->first();
+        $UserRole4 = UserRole::where('user_id', $id)->where('modules', 'Wallet')->first();
 
-        return view('user_access.right', compact('User', 'UserRole', 'UserRole1', 'UserRole2'));
+        return view('user_access.right', compact('User', 'UserRole', 'UserRole1', 'UserRole2', 'UserRole3', 'UserRole4'));
     }
 
     public function rightfunc(Request $request)
     {   
         $id = $request->get('userID');
-        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Product Management')->first();
+        $UserRole = UserRole::where('user_id', $id)->where('modules', 'Cars')->first();
         $UserRole1 = UserRole::where('user_id', $id)->where('modules', 'UAC')->first();
-        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report') ->first();
+        $UserRole2 = UserRole::where('user_id', $id)->where('modules', 'Report')->first();
+        $UserRole3 = UserRole::where('user_id', $id)->where('modules', 'Rewards')->first();
+        $UserRole4 = UserRole::where('user_id', $id)->where('modules', 'Wallet')->first();
 
 
         if ($UserRole) {
-           UserRole::where('user_id', $id)->where('modules', 'Product Management')->update([
-        'edit'=> $request->get('productEdit'),
-        'view'=>  $request->get('productView'),
+           UserRole::where('user_id', $id)->where('modules', 'Cars')->update([
+        'edit'=> $request->get('carsEdit'),
+        'view'=>  $request->get('carsView'),
        ]);
         }
 
@@ -188,6 +204,20 @@ class UserAccessController extends Controller
            UserRole::where('user_id', $id)->where('modules', 'Report')->update([
         // 'edit'=> $request->get('reportEdit'),
         'view'=>  $request->get('reportView'),
+       ]);
+        }
+
+        if ($UserRole3) {
+           UserRole::where('user_id', $id)->where('modules', 'Rewards')->update([
+        'edit'=> $request->get('rewardsEdit'),
+        'view'=>  $request->get('rewardsView'),
+       ]);
+        }
+
+        if ($UserRole4) {
+           UserRole::where('user_id', $id)->where('modules', 'Wallet')->update([
+        'edit'=> $request->get('walletEdit'),
+        'view'=>  $request->get('walletView'),
        ]);
         }
        

@@ -15,9 +15,16 @@ class ProfileController extends Controller
      */
     public function index()
     {
+        if ( Auth::user()->role == 'Admin') {
+       $User = User::where('id', Auth::user()->id)->first();
+        return view('profile.adminIndex',compact('User'));
+
+        }else{
+
         $User = User::where('id', Auth::user()->id)->first();
-  
         return view('profile.index',compact('User'));
+    }
+    
     }
    
     /**

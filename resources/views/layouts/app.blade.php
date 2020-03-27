@@ -52,114 +52,7 @@
     </div>
   </div>
     
-   
-  <!--  <a href="{{ url('home') }}" class="brand-link"> -->
-      <!-- <img src="{{URL::asset('/dist/img/fube2.png')}}" alt="AdminLTE Logo" class="brand-image "
-           style="opacity: .8">&nbsp;&nbsp;   -->
-  <!--    <span class="brand-text font-weight-light">E-Wallet System</span>
-    </a> -->
-
-    <!-- Sidebar -->
-  <!--  <div class="sidebar"> -->
-      <!-- Sidebar user panel (optional) -->
-     <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{URL::asset('/dist/img/user4.png')}}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="{{ url('profile') }}" class="d-block">{{ Auth::user()->name}}</a>
-        </div>
-      </div> -->
-
-      <!-- Sidebar Menu -->
-    <!--  <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> -->
-          <!-- Add uploadss to the links using the .nav-uploads class
-               with font-awesome or any other uploads font library -->
-     <!--     <li class="nav-item">
-                <a href="{{ url('home') }}" class="nav-link active" style="background-color: #ff8c00;">
-                  <i class="fa fa-home nav-uploads"></i>
-                  <p>Home</p>
-                </a>
-              </li>
-              <?php use App\Models\UserRole;?>
-              <?php 
-              $UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Product Management')->first();
-              $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first(); 
-              $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Report') ->first(); 
-              ?>
-             
-
-                 <?php if (!empty($UserRole2)):?>
-                <?php if($UserRole2->view == 'on'):?>
-                 <li class="nav-item has-treeview ">
-            <a href="#" class="nav-link ">
-              <i class="nav-uploads fas fa-chart-line"></i>
-              <p>
-                Reports
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ url('sales_report') }}" class="nav-link">
-                  <i class="fas fa-chart-bar nav-uploads"></i>
-                  <p>Sales Report</p>
-                </a>
-              </li>
-             
-              
-            </ul>
-          </li>
-           <?php endif;?>
-          <?php endif;?>
-              
-
-                <?php if (!empty($UserRole1)):?>
-                <?php if($UserRole1->edit == 'on' || $UserRole1->view == 'on'):?>
-               <li class="nav-item">
-                <a href="{{ url('user_access') }}" class="nav-link ">
-                  <i class="fa fa-key nav-uploads"></i>
-                  <p>User Access Control</p>
-                </a>
-              </li>
-               <?php endif;?>
-                <?php endif;?>
-
-                 <li class="nav-item">
-                <a href="{{ url('wallet') }}" class="nav-link ">
-                  <i class="fas fa-wallet nav-uploads"></i>
-                  <p>Wallet</p>
-                </a>
-              </li>
-
-
-               <li class="nav-item">
-                <a href="{{ url('profile') }}" class="nav-link ">
-                  <i class="fa fa-user nav-uploads"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-          <li class="nav-item">
-            <a href="{{ url('logout') }}" class="nav-link"  
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <i class="fa fa-power-off nav-uploads"></i>
-              <p>
-               {{ __('Logout') }}
-              </p>
-            </a>
-            <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-          </li>
-         
-        </ul>
-      </nav> -->
-      <!-- /.sidebar-menu -->
-   <!-- </div> -->
-    <!-- /.sidebar -->
- <!-- </aside> -->
-
+ 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper bg1 bg">
     <!-- Content Header (Page header) -->
@@ -233,10 +126,10 @@
   <!-- Main Footer -->
   <footer class="main-footer me text-center" style="background:#F4B84A;">
   <div class="navbar me "  id="myNavbar">
-  <a class="link" href="rewards/"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
+  <a class="link" href="{{ url('rewards') }}"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
   <a class="link" href="#news"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
-  <a class="link" href="wallet/"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
-  <a class="link"href="{{url('history.history')}}"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
+  <a class="link" href="{{url('wallet')}}"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
+  <a class="link"href="{{url('history')}}"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
    <a class="link" href="{{url('profile')}}"><img class="menu1" src="{{ asset('uploads/Account.png') }}"><br>Account</a>
   
 </div>

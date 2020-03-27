@@ -35,21 +35,21 @@
         <tr>
         	<td></td>
             <td>1</td>
-            <td>Product Management</td>
-            <input type="hidden" name="moduleName1" value="Product Management">
-            <td><center><input type="checkbox" class="form-check-input" name="productEdit" id="productEdit" 
+            <td>Cars</td>
+            <input type="hidden" name="moduleName1" value="Cars">
+            <td><center><input type="checkbox" class="form-check-input" name="carsEdit" id="carsEdit" 
 
             <?php if(!empty($UserRole)):?>
-           <?php if ($UserRole->modules == 'Product Management' && $UserRole->edit == 'on'):?>
+           <?php if ($UserRole->modules == 'Cars' && $UserRole->edit == 'on'):?>
            	checked
            <?php endif;?>
            <?php endif;?>
 
            	></center></td>
-            <td><center><input type="checkbox" class="form-check-input" name="productView" id="productView"
+            <td><center><input type="checkbox" class="form-check-input" name="carsView" id="productView"
 
             <?php if(!empty($UserRole)):?>
-            <?php if ($UserRole->modules == 'Product Management' && $UserRole->view == 'on'):?>
+            <?php if ($UserRole->modules == 'Cars' && $UserRole->view == 'on'):?>
            	checked
            <?php endif;?>
            <?php endif;?>
@@ -102,10 +102,56 @@
            <?php endif;?>
               ></center></td>
         </tr>
+
+         <tr>
+          <td></td>
+            <td>4</td>
+            <td>Rewards</td>
+            <input type="hidden" name="moduleName2" value="Rewards">
+            <td><center><input type="checkbox" class="form-check-input" name="rewardsEdit" id="userEdit"
+
+              <?php if(!empty($UserRole3)):?>
+            <?php if ($UserRole3->modules == 'Rewards' && $UserRole3->edit == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center></td>
+
+            <td><center><input type="checkbox" class="form-check-input" name="rewardsView" id="userView"
+              <?php if(!empty($UserRole3)):?>
+              <?php if ($UserRole3->modules == 'Rewards' && $UserRole3->view == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center></td>
+        </tr>
+
+         <tr>
+          <td></td>
+            <td>5</td>
+            <td>Wallet</td>
+            <input type="hidden" name="moduleName2" value="Wallet">
+            <td><center><input type="checkbox" class="form-check-input" name="walletEdit" id="userEdit"
+
+              <?php if(!empty($UserRole4)):?>
+            <?php if ($UserRole4->modules == 'Wallet' && $UserRole4->edit == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center></td>
+
+            <td><center><input type="checkbox" class="form-check-input" name="walletView" id="userView"
+              <?php if(!empty($UserRole4)):?>
+              <?php if ($UserRole4->modules == 'Wallet' && $UserRole4->view == 'on'):?>
+            checked
+           <?php endif;?>
+           <?php endif;?>
+              ></center></td>
+        </tr>
       
     </tbody>
     </table>
-
+    <br>
     <center><button type="submit" class="btn btn-primary">Submit</button></center>
 
          </form>

@@ -84,28 +84,47 @@
               </li>
               <?php use App\Models\UserRole;?>
               <?php 
-              $UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Players')->first();
-              $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Agents') ->first(); 
-              $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC') ->first();
-              $UserRole3 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Reports') ->first();
-              $UserRole4 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Chips') ->first(); 
-
-              $UserRole5 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Tables') ->first(); 
+             $UserRole = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Cars')->first();
+        $UserRole1 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'UAC')->first();
+        $UserRole2 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Report')->first();
+        $UserRole3 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Rewards')->first();
+        $UserRole4 = UserRole::where('user_id', Auth::user()->id)->where('modules', 'Wallet')->first();
               ?>
              
+              <?php if (!empty($UserRole)):?>
+                <?php if($UserRole->edit == 'on' || $UserRole->view == 'on'):?>
               <li class="nav-item">
                 <a href="{{ url('cars') }}" class="nav-link ">
                   <i class="fas fa-car nav-icon"></i>
                   <p>Cars</p>
                 </a>
               </li>
+               <?php endif;?>
+                <?php endif;?>
 
+
+               <?php if (!empty($UserRole3)):?>
+                <?php if($UserRole3->edit == 'on' || $UserRole3->view == 'on'):?>
+              <li class="nav-item">
+                <a href="{{ url('rewards') }}" class="nav-link ">
+                  <i class="fas fa-gift nav-icon"></i>
+                  <p>Rewards</p>
+                </a>
+              </li>
+               <?php endif;?>
+                <?php endif;?>
+
+
+               <?php if (!empty($UserRole4)):?>
+                <?php if($UserRole4->edit == 'on' || $UserRole4->view == 'on'):?>
               <li class="nav-item">
                 <a href="{{ url('wallet') }}" class="nav-link ">
                   <i class="fas fa-wallet nav-icon"></i>
                   <p>Wallet</p>
                 </a>
               </li>
+               <?php endif;?>
+                <?php endif;?>
 
                <li class="nav-item">
                 <a href="{{ url('profile') }}" class="nav-link ">

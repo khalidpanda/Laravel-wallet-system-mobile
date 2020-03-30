@@ -64,7 +64,7 @@
    <div class="row">
     <div class="col">
         <div class="info">
-          <a href="{{ url('profile') }}" class="d-block">{{ Auth::user()->name}}</a>
+          <a href="{{ url('profile') }}" class="d-block text-white">{{ Auth::user()->name}}</a>
 
         </div>
     </div>

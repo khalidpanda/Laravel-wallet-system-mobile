@@ -573,3 +573,26 @@ color: white;
   font-size: 4vw;
   display: inline-block;
 }
+
+.wallet-logo {
+
+width: 20%;
+margin-left: 40%;
+
+}
+
+.wallet-name {
+  margin-left: 35%;
+  font-size: 12vw;
+}
+
+.wallet-text {
+  margin-left: 32%;
+}
+
+
+.acccount-line {
+  background-color: #707070;
+ width: 80%;
+ margin-left: -1%;
+}

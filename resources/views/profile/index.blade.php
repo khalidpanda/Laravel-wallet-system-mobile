@@ -14,7 +14,7 @@
      <div class="col ">
  <img class="img-responsive" style="width: 40%; margin-top: 60%; margin-left: -80%;" src="{{url('/uploads/Profile2.png')}}">
  <a href="">
- <p class="text-white" style="margin-top: -33%; margin-left: -32%;">David <br>Edit Profile</p>
+ <p class="text-white" style="margin-top: -33%; margin-left: -32%;">{{ Auth::user()->name}} <br>Edit Profile</p>
  </a>
     </div> 
 

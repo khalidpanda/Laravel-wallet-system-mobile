@@ -26,7 +26,7 @@
 
 <div class="wallet-box no-gutters">
 	<img class="wallet-logo img-responsive" src="{{url('/uploads/c.png')}}">
-	<h5 class="text-white wallet-name">David</h5><br>
+	<h5 class="text-white wallet-name">{{ Auth::user()->name}}</h5><br>
 	<p class="text-white wallet-text">Phone No : 0000000000</p>
 	<p class="text-white wallet-text">Points : <span style="margin-left: 10%;">10</span></p>
 	<p class="text-white wallet-text">Credit : <span style="margin-left: 10%;">00.00</span></p>

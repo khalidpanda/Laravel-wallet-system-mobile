@@ -1,4 +1,4 @@
-@extends('layouts.loginlayout')
+@extends('layouts.loginLayout')
 @section('content')
 
 <div class="container bg1 bg login-top">

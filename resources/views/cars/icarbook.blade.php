@@ -8,7 +8,7 @@
 
 <div class="row no-gutters">
     <div class="col">
-<a href="{{url('home')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
+<a href="{{url('icar')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
     </div>
      <div class="col ">
 <a class="tetx-white " href="{{route('home')}}"><img style="margin-left: -38%; margin-top: 4%; width: 65%;" class="logo" src="{{ asset('uploads/logo.png') }}"></a>
@@ -22,14 +22,14 @@
       <!--Slide 1-->
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('uploads/Rent1.png')}}" alt="First slide">
+          <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('/uploads/'.'/'.$Car->cars_picture)}}" alt="First slide">
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('uploads/Rent2.png')}}" alt="Second slide">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100 img-rounded img-responsive" src="{{URL::asset('uploads/Rent3.png')}}" alt="Third slide">
-        </div>
+        </div> -->
       </div>
       <!--/.Slide 1-->
       <!--Control start here-->
@@ -42,14 +42,14 @@
         <span class="sr-only">Next</span>
       </a>
       <!--/.Control finish here-->
-      <ol class="carousel-indicators">
+     <!--  <ol class="carousel-indicators">
         <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100 " src="{{URL::asset('uploads/Rent1.png')}}"
             class="img-fluid"></li>
         <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100" src="{{URL::asset('uploads/Rent2.png')}}"
             class="img-fluid"></li>
         <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100" src="{{URL::asset('uploads/Rent3.png')}}"
             class="img-fluid"></li>
-      </ol>
+      </ol> -->
     </div>
     <!--/.Carousel body fiish here-->
 
@@ -59,7 +59,7 @@
 
 </div>
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <!--Body content -->
 
 
@@ -69,9 +69,9 @@
     
        <div class="row">
         <div class="col"> 
-           <p class="text-white" style="margin-left: 5%;">Volkswagon Tiguan</p>
-           <p style="color: #535866; font-size: 3vw; margin-top: -5%; margin-left: 5%;">2019 SPORT CLASS</p>
-           <p class="icar-star" style="margin-left: 70%; margin-top: -15%; width: 20%;"><img style="margin-top: -5%;" src="{{ url('uploads/star.png') }}"> 4.5</p>
+           <p class="text-white" style="margin-left: 5%;">{{$Car->cars_name}}</p>
+           <p style="color: #535866; font-size: 3vw; margin-top: -5%; margin-left: 5%;">{{$Car->cars_year}} {{$Car->cars_model}} Class</p>
+           <p class="icar-star" style="margin-left: 70%; margin-top: -15%; width: 20%;"><img style="margin-top: -5%;" src="{{ url('uploads/star.png') }}"> {{$Car->cars_rating}}</p>
            <br>
            <hr class="new1">
      </div>
@@ -88,7 +88,7 @@
 <div class="col icarbook-box" style="width: 70%; margin-left: 15%;">
  <div class="icarbook-mask text-center"><img class="icarbook-img" src="{{ url('uploads/Mask1.png') }}">
  <br></div>
-<p class="text-white icarbook-text">For 4 person</p>
+<p class="text-white icarbook-text">{{$Car->cars_body}}</p>
 	
 </div>
 
@@ -100,7 +100,7 @@
 <div class="col icarbook-box" style="width: 70%; margin-left: 15%;">
  <div class="icarbook-mask text-center"><img class="icarbook-img" src="{{ url('uploads/Mask2.png') }}">
  <br></div>
-<p class="text-white icarbook-text">Manual Transmission</p>
+<p class="text-white icarbook-text">{{$Car->cars_transmission}}</p>
   
 </div>
 
@@ -111,7 +111,7 @@
 <div class="col icarbook-box" style="width: 70%; margin-left: 15%;">
  <div class="icarbook-mask text-center"><img class="icarbook-img" src="{{ url('uploads/Mask3.png') }}">
  <br></div>
-<p class="text-white icarbook-text">Dissel</p>
+<p class="text-white icarbook-text">{{$Car->cars_fuel_type}}</p>
   
 </div>
 
@@ -123,7 +123,7 @@
 <div class="col icarbook-box" style="width: 70%; margin-left: 15%;">
  <div class="icarbook-mask text-center"><img class="icarbook-img" src="{{ url('uploads/Mask4.png') }}">
  <br></div>
-<p class="text-white icarbook-text">90 hp</p>
+<p class="text-white icarbook-text">{{$Car->cars_fuel}}</p>
   
 </div>
 

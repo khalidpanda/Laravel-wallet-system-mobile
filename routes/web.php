@@ -95,5 +95,5 @@ Route::get('/irentnow', 'CarsController@irentalNow');
 Route::get('/history', 'HistoryController@Mhistory');
 
 //icar book 2nd step
-Route::get('/icarbook', 'CarsController@icarbook');
+Route::get('/icarbook/{id}', 'CarsController@icarbook');
 

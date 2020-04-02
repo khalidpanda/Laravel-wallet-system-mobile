@@ -193,8 +193,10 @@ class CarsController extends Controller
 
 //icar section 1st step
   public function icar()
-{
-   return view('cars.icar');
+{ 
+   $Car = Car::where('cars_class', 'Cars')->get();
+        
+   return view('cars.icar',compact('Car'));
 }
 
 //irental section
@@ -204,7 +206,8 @@ class CarsController extends Controller
 }
 
 //for irental next step
- public function irentalNow(){
+ public function irentalNow()
+ {
 
 return view('cars.irentnow');
 
@@ -212,11 +215,13 @@ return view('cars.irentnow');
 
 //for icar book 2nd step
 
- public function icarbook(){
+ public function icarbook($id)
+ {
+  $Car = Car::where('cars_id', $id)->first();
+        
+return view('cars.icarbook',compact('Car'));
 
-return view('cars.icarbook');
-
-}
+  }
 
 //for icarbook history 
 

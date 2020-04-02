@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $cars_model
  * @property string $cars_body
  * @property string $cars_fuel
+ * @property string $cars_fuel_type
  * @property string $cars_transmission
  * @property string $cars_description
  * @property string $cars_rating
@@ -33,8 +34,7 @@ use Illuminate\Database\Eloquent\Model;
  * @package App\Models
  */
 class Car extends Model
-{	
-	
+{
 	protected $table = 'cars';
 	protected $primaryKey = 'cars_id';
 
@@ -49,6 +49,7 @@ class Car extends Model
 		'cars_model',
 		'cars_body',
 		'cars_fuel',
+		'cars_fuel_type',
 		'cars_transmission',
 		'cars_description',
 		'cars_rating',

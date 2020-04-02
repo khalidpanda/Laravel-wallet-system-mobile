@@ -97,3 +97,8 @@ Route::get('/history', 'HistoryController@Mhistory');
 //icar book 2nd step
 Route::get('/icarbook', 'CarsController@icarbook');
 
+//icar book history
+Route::get('/icarhistory', 'CarsController@icarhistory');
+
+//irent favourite
+Route::get('/irentfavourite', 'CarsController@irentfavourite');

@@ -8,7 +8,7 @@
 
 <div class="row no-gutters">
     <div class="col">
-<a href="{{url('home')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
+<a href="{{url('irental')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
     </div>
      <div class="col ">
 <a class="tetx-white " href="{{route('home')}}"><img style="margin-left: -38%; margin-top: 4%; width: 65%;" class="logo" src="{{ asset('uploads/logo.png') }}"></a>
@@ -59,7 +59,8 @@
 
 </div>
 
-<br><br><br><br><br><br><br><br>
+<div class="gap5x"></div>
+<div class="gaptop2x"></div>
 <!--Body content -->
 
 
@@ -152,9 +153,35 @@
        <div class="input-group">
         <div class="input-group-addon">
         </div>
-        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date" placeholder="Remark" type="text"/>
+        <input style="background-color: #161A27; border: 1px solid #707070; border-radius: 20px; text-align: center;" class="form-control" id="date" name="date"  type="time"/>
       </div>
      </div>
+
+
+      <div class="form-group " style="margin-left: 16%;">
+       <div class="input-group">
+        <div class="input-group-addon">
+        </div>
+
+        <p class="text-white">With/without driver?</p>
+        <p style="color: white; margin-top: 12%; margin-left: -70%;">Yes</p>
+        <input type="checkbox" name="" style="margin-top: 15%; margin-left: 2%;">
+         <p style="color: white; margin-top: 12%; margin-left: 20%;">No</p>
+        <input type="checkbox" name="" style="margin-top: 15%; margin-left: 2%;">
+        <br>
+         <p class="text-white">With/without Bodyguard?</p>
+        <p style="color: white; margin-top: 15%; margin-left: -70%;">Yes</p>
+        <input type="checkbox" name="" style="margin-top: 15%; margin-left: 2%;">
+         <p style="color: white; margin-top: 15%; margin-left: 20%;">No</p>
+        <input type="checkbox" name="" style="margin-top: 15%; margin-left: 2%;">
+
+
+      </div>
+     </div>
+<a href="{{url('/')}}" class="btn btn log-button text-white" style="height: 6%; padding: 5%;">CALL NOW</a>
+<div class="gaptop1x"></div>
+<a href="{{url('irentfavourite')}}" class="btn btn log-button text-white" style="height: 6%; padding: 5%; background-color: transparent;">BOOK NOW</a>
+
     
     </form>
 

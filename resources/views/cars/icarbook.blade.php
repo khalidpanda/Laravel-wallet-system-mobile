@@ -8,7 +8,7 @@
 
 <div class="row no-gutters">
     <div class="col">
-<a href="{{url('home')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
+<a href="{{url('icar')}}"><img class="back" src="{{URL::asset('uploads/Back.png')}}"></a>
     </div>
      <div class="col ">
 <a class="tetx-white " href="{{route('home')}}"><img style="margin-left: -38%; margin-top: 4%; width: 65%;" class="logo" src="{{ asset('uploads/logo.png') }}"></a>
@@ -129,11 +129,21 @@
 
 
 <!--4th row ends -->
+<div class="gaptop2x"></div>
 
+<hr style="background-color: #414148">
 
-<br><br>
-        
+<div class="col">
 
+<p style="color: #F4B84A; font-size: 7vw; margin-left: 7%;">RM 150,000.00</p>
+<p class="text-white" style="font-size: 4vw; margin-left: 7%;">CAR FEATURES</p>
+<p style="color: #535866; font-size: 3vw; margin-left: 7%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id massa ipsum. Nulla dictu Read More</p>
+
+<a href="{{url('icarhistory')}}" class="btn btn log-button text-white" style="height: 8%; padding: 5%;">BOOK NOW</a>
+<br>
+<div class="gaptop2x"></div>
+ <div class="gap5x"></div>
+</div>
 </div>
 
 

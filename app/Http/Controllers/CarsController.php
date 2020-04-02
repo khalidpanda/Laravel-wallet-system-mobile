@@ -218,5 +218,23 @@ return view('cars.icarbook');
 
 }
 
+//for icarbook history 
+
+public function icarhistory(){
+
+return view('cars.icarhistory');
+
+}
+
+
+//for irent favourite
+
+public function irentfavourite(){
+
+return view('cars.irentfavourite');
+
+}
+
+
 
 }

@@ -48,10 +48,10 @@
 <div class="gap5x"></div>
 <!--Menu section -->
 
-<footer class="main-footer me text-center" style="background:#F4B84A;">
+ <footer class="main-footer me text-center" style="background:#F4B84A;">
   <div class="navbar me "  id="myNavbar">
   <a class="link" href="{{ url('rewards') }}"><img class="menu1" src="{{ asset('uploads/Reward.png') }}"><br>Reward</a>
-  <a class="link" href="#news"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
+  <a class="link" href="{{url('message')}}"><img class="menu1" src="{{ asset('uploads/Message.png') }}"><br>Message</a>
   <a class="link" href="{{url('wallet')}}"><img class="menu1" src="{{ asset('uploads/Wallet.png') }}"><br>Wallet</a>
   <a class="link"href="{{url('history')}}"><img class="menu1" src="{{ asset('uploads/History.png') }}"><br>History</a>
    <a class="link" href="{{url('profile')}}"><img class="menu1" src="{{ asset('uploads/Account.png') }}"><br>Account</a>

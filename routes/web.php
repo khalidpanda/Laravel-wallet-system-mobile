@@ -102,3 +102,6 @@ Route::get('/icarhistory', 'CarsController@icarhistory');
 
 //irent favourite
 Route::get('/irentfavourite', 'CarsController@irentfavourite');
+
+//message
+Route::get('/message', 'NotificationController@message');

@@ -81,4 +81,15 @@ class NotificationController extends Controller
 {
      
 }
+
+//for message menu
+  public function message()
+{
+     
+
+
+return view('message.index');
+
+
+}
 }

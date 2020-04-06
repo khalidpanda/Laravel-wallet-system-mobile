@@ -76,7 +76,20 @@ Route::get('/notification', 'NotificationController@index');
 Route::get('/topup', 'TopupController@index');
 
 //payment
-Route::get('/payment', 'TopupController@ipayment');
+Route::get('/payment', 'TopupController@ipayment2');
+//payment
+Route::get('/recieve', 'TopupController@recieve');
+
+
+//paymerchant
+Route::get('/paymerchant', 'TopupController@merchantpay');
+//mercahntnow
+Route::get('/merchantnow', 'TopupController@merchantnow');
+//pay
+Route::get('/ipayment', 'TopupController@pay3');
+
+//ipayment  qr code
+Route::get('/ipayqr', 'TopupController@iqr');
 
 //i-book
 Route::get('/book', 'BookController@index');

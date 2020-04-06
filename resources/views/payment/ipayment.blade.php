@@ -15,7 +15,7 @@
     </div> 
 </div>
 
-        <h2 class="text-white text-responsive">I-Book</h2>
+        <h2 class="text-white text-responsive">I-Payment</h2>
    
     </div>
 
@@ -30,15 +30,15 @@
     <div class="container no-gutters">
   <div class="row no-gutters">
     <div class="col i-payment">
-    <a href="" class="btn btn-outline  text-center" style="color: #F4B84A;">SCAN<br>QR CODE</a>
+    <a href="{{url('ipayqr')}}" class="btn btn-outline  text-center" style="color: #F4B84A;">SCAN<br>QR CODE</a>
     </div>
     <div class="w-100"></div>
     <div class="col i-payment">
-    	 <a href="" class="btn btn-outline" style="color: #F4B84A;">RECEIVE<br>CREDIT</a>
+    	 <a href="{{url('recieve')}}" class="btn btn-outline" style="color: #F4B84A;">RECEIVE<br>CREDIT</a>
     </div>
     <div class="w-100"></div>
     <div class="col i-payment">
-    	 <a href="" class="btn btn-outline" style="color: #F4B84A;">PAY<br>MERCHANT</a>
+    	 <a href="{{url('paymerchant')}}" class="btn btn-outline" style="color: #F4B84A;">PAY<br>MERCHANT</a>
     </div>
   </div>
 </div>

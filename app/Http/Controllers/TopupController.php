@@ -82,9 +82,43 @@ class TopupController extends Controller
         //
     }
 
-
-      public function ipayment()
+//ipayment 
+      public function ipayment2()
     {
         return view('payment.index');
     }
+
+//ipayment qr code
+        public function iqr()
+    {
+        return view('payment.ipayqr');
+    }
+
+    //pay
+        public function pay3()
+    {
+        return view('payment.ipayment');
+    }
+
+     //recieve
+        public function recieve()
+    {
+        return view('payment.recieve');
+    }
+
+
+     //paymerchant
+        public function merchantpay()
+    {
+        return view('payment.paymerchant');
+    }
+
+     //merchantnow
+        public function merchantnow()
+    {
+        return view('payment.merchantnow');
+    }
+
+
+
 }
